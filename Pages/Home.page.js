@@ -12,6 +12,9 @@ let HomePage=function(){
     this.email=element(by.name("email"));
     this.password=element(by.name("password"));
     this.signinButton=$(".button.is-dark");
+
+    //resul
+    this.password=$("input[name='password']");
     
 
 }

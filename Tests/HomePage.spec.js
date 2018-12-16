@@ -31,7 +31,7 @@ describe('BookIT Home Page test scripts', () => {
 
     });
 
-    fit('should verify "Git Hub" icon is forwarding to Git Hub website when clicked', () => {
+    it('should verify "Git Hub" icon is forwarding to Git Hub website when clicked', () => {
         
         HomePage.homePageGitHubLink.click();
         let gitWindow="";
@@ -49,9 +49,28 @@ describe('BookIT Home Page test scripts', () => {
 
     it('should Verify Question Circle "?" icon is enabled', () => {
         expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
-});
+    });
 
-    fit('should verify "Question" icon swithced to Mailto window when clicked', () => {
+    it('should Verify "Git Hub" icon color changes if we hover over', () => {
+        HomePage.homePageGitHubLink.getCssValue("color").then(function(colorValue){
+        console.log("first color value: "+colorValue);        
+    
+         browser.actions().mouseMove(HomePage.gitHubIcon).perform();
+
+         HomePage.homePageGitHubLink.getCssValue("color").then(function(colorValue2){
+        console.log("color value after hover over: "+colorValue2);
+
+        expect(colorValue).not.toEqual(colorValue2);
+         });
+      });
+    });
+
+    it('should Verify "Git Hub" icon is visible', () => {
+        expect(HomePage.gitHubIcon.isDisplayed()).toBe(true);
+        expect(HomePage.gitHubIcon.isPresent()).toBe(true);
+    });
+
+    it('should verify "Question" icon swithced to Mailto window when clicked', () => {
         let questionWindow="";
         browser.close().then(()=>{
             browser.switchTo().window( browserWindows[0]);
