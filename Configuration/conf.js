@@ -1,6 +1,6 @@
 let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 let HtmlReporter = require('protractor-beautiful-reporter');
-CDATASection..
+
 exports.config = {
    
     directConnect : true,
