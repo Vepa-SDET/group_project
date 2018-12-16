@@ -117,18 +117,18 @@ describe('BookIT Home Page test scripts', () => {
     });
 //<<<<<<< HEAD
     
-    it('should Verify "Git Hub" icon is visible', () => {
-        expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
+    // it('should Verify "Git Hub" icon is visible', () => {
+    //     expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
         
-    });
-    it('should Verify "Git Hub" icon color changes if we hover over ', () =>{
-    expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
-    });
-    it('should verify  "?" icon is enabled',()=>{
-    browser.actions().mouseMove(HomePage.homePageGithublink).perform();
+    // });
+    // it('should Verify "Git Hub" icon color changes if we hover over ', () =>{
+    // expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
+    // });
+    // it('should verify  "?" icon is enabled',()=>{
+    // browser.actions().mouseMove(HomePage.homePageGithublink).perform();
         
-    expect(HomePage.homePageGithublink.getCssValue("color")).toEqual("rgba(54, 54, 54, 1)");
-    });
+    // expect(HomePage.homePageGithublink.getCssValue("color")).toEqual("rgba(54, 54, 54, 1)");
+    // });
    
 //=======
 
