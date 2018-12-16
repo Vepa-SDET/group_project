@@ -13,9 +13,9 @@ let HomePage=function(){
     this.password=element(by.name("password"));
     this.signinButton=$(".button.is-dark");
 
+
     //resul
     this.password=$("input[name='password']");
-    
 
 }
 module.exports=new HomePage();
