@@ -171,5 +171,9 @@ describe('BookIT Home Page test scripts', () => {
             expect(HomePage.homePageSignInButton.isDisplayed()).toBe(true);
                     
            })
+<<<<<<< HEAD
+=======
+   //test1
+>>>>>>> 9d0b6bc7e24637562d8484c638a5ae0fb6f09125
 
 });
