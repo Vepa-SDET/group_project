@@ -171,20 +171,5 @@ describe('BookIT Home Page test scripts', () => {
             expect(HomePage.homePageSignInButton.isDisplayed()).toBe(true);
                     
            })
-   //test1
-<<<<<<< HEAD
-//>>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
 
-
-
-=======
-//>>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
->>>>>>> 4bbc1aacd46581e82034adf34b7be0964e9d9257
-=======
->>>>>>> 111cc31e19b4f2d8fae02daa95b6a5722bf206d0
->>>>>>> 6ce0133b88541fe772cb98ec1de1ace6e635e0bc
 });

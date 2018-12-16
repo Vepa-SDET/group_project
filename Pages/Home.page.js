@@ -12,16 +12,6 @@ let HomePage=function(){
     this.password=$("input[name='password']");
 
 
-<<<<<<< HEAD
-=======
-    // Kadriye
-    this.HomePageLogo=$(".title");
-    this.email=element(by.name("email"));
-    this.password=element(by.name("password"));
-    this.signinButton=$(".button.is-dark");
-    
-
->>>>>>> 111cc31e19b4f2d8fae02daa95b6a5722bf206d0
 
 
 }
