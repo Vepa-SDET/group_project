@@ -28,6 +28,18 @@ describe('BookIT Home Page test scripts', () => {
     
     });
 
+    it('should verify email field', () => {
+        expect(HomePage.homePageEmailLoginBar.isDisplayed()).toBe(true);
+    });
+    
+    it('should verify password field', () => {
+        expect(HomePage.homePagePasswordBar.isDisplayed()).toBe(true);
+    });
+    
+    it('should verify email field has "email" place holder', () => {
+        expect(HomePage.homePageEmailLoginBar.getAttribute("placeholder")).toEqual("email");
+    });
+
     it('should verify Login functionality with invalid credentials', () => {
         HomePage.homePageEmailLoginBar.sendKeys(Data.invalidUser.email);
         HomePage.homePagePasswordBar.sendKeys(Data.invalidUser.password);
@@ -122,4 +134,7 @@ describe('BookIT Home Page test scripts', () => {
         })
    //test1
 >>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
+
+
+
 });
