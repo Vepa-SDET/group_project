@@ -2,9 +2,14 @@ require('../Utilities/CustomLocators.js');
 let HomePage= require('../Pages/Home.page.js');
 let Base = require('../Utilities/Base.js');
 let Data = require('../TestData/data.json');
-
+//DB Connection
+var pgp            = require('pg-promise')(/*options*/);
+var dbConnection   = require("../TestData/dbConnection.js");
+var queries        = require("../TestData/dbQueries.js");
 describe('BookIT Home Page test scripts', () => {
     let browserWindows="";
+    var db=pgp(dbConnection);
+    var array=[]
     beforeAll(() => {
         Base.navigateToHome();
     });
@@ -71,6 +76,7 @@ describe('BookIT Home Page test scripts', () => {
         });
         
     });
+<<<<<<< HEAD
     
     it('should Verify "Git Hub" icon is visible', () => {
         expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
@@ -85,4 +91,35 @@ describe('BookIT Home Page test scripts', () => {
     expect(HomePage.homePageGithublink.getCssValue("color")).toEqual("rgba(54, 54, 54, 1)");
     });
    
+=======
+
+  //Feride Data base query
+    fit('Should verify email field accepts only correct email format',()=>{
+        db.any(queries.wrongEmail)
+        .then(function(result){
+            array=result
+            console.log(array)
+        }).catch(function(error){
+            console.log(error)
+        }).then(function(){
+            // array.forEach(function(element){
+            //     HomePage.email.sendKeys(element.firstname+"@gmail.co");
+            //     browser.sleep(5000)
+            //     HomePage.email.sendKeys(protractor.Key.ENTER)
+            //     expect(element(by.css(".cdk-overlay-container")).toBe(true));
+            //     browser.sleep(3000)
+            //     HomePage.email.clear();
+            //})
+              for(var a=0;a<array.length-1;a++){
+                HomePage.email.sendKeys(array[a].firstname+"@gmail.co");
+                HomePage.email.sendKeys(protractor.Key.ENTER)
+                browser.sleep(3000)
+                HomePage.email.clear();
+              }
+                
+            })
+           
+        })
+   //test1
+>>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
 });
