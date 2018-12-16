@@ -139,5 +139,18 @@ describe('BookIT Home Page test scripts', () => {
             })
            
         })
+        it('Should verify password field has "password" place holder',()=>{
+            expect(HomePage.passwordPlaceHolder.getAttribute("placeholder")).toEqual("password");
+               
+           })
+       
+        it(' should be disabled "sign in" button when email & password fields empty',()=>{
+               expect(HomePage.signButton.isDisplayed()).toBe(true);
+                    
+           })
    //test1
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5c904872f8ee5edee462a6803d04169bfd8f60a2
 });
