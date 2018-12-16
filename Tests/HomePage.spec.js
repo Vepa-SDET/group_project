@@ -36,7 +36,32 @@ describe('BookIT Home Page test scripts', () => {
 
     });
 
-    fit('should verify "Git Hub" icon is forwarding to Git Hub website when clicked', () => {
+    it('should Verify Question Circle "?" icon is enabled', () => {
+        expect(HomePage.homePageQuestionLink.isDisplayed()).toBe(true);
+    });
+
+    it('should Verify "Git Hub" icon color changes if we hover over', () => {
+        HomePage.homePageGitHubLink.getCssValue("color").then(function(colorValue){
+        console.log("first color value: "+colorValue);        
+    
+         browser.actions().mouseMove(HomePage.gitHubIcon).perform();
+
+         HomePage.homePageGitHubLink.getCssValue("color").then(function(colorValue2){
+        console.log("color value after hover over: "+colorValue2);
+
+        expect(colorValue).not.toEqual(colorValue2);
+         });
+      });
+    });
+
+    it('should Verify "Git Hub" icon is visible', () => {
+        expect(HomePage.gitHubIcon.isDisplayed()).toBe(true);
+        expect(HomePage.gitHubIcon.isPresent()).toBe(true);
+    });
+
+
+
+    it('should verify "Git Hub" icon is forwarding to Git Hub website when clicked', () => {
         
         HomePage.homePageGitHubLink.click();
         let gitWindow="";
@@ -54,11 +79,17 @@ describe('BookIT Home Page test scripts', () => {
         }); 
     });
 
+<<<<<<< HEAD
     it('should Verify Question Circle "?" icon is enabled', () => {
         expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
     });
 
     xit('should verify "Question" icon swithced to Mailto window when clicked', () => {
+=======
+   
+
+    it('should verify "Question" icon swithced to Mailto window when clicked', () => {
+>>>>>>> 111cc31e19b4f2d8fae02daa95b6a5722bf206d0
         let questionWindow="";
         browser.close().then(()=>{
             browser.switchTo().window( browserWindows[0]);
@@ -78,7 +109,11 @@ describe('BookIT Home Page test scripts', () => {
         });
         
     });
+<<<<<<< HEAD
 //<<<<<<< HEAD
+=======
+
+>>>>>>> 111cc31e19b4f2d8fae02daa95b6a5722bf206d0
     
     it('should Verify "Git Hub" icon is visible', () => {
         expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
@@ -93,10 +128,14 @@ describe('BookIT Home Page test scripts', () => {
     expect(HomePage.homePageGithublink.getCssValue("color")).toEqual("rgba(54, 54, 54, 1)");
     });
    
+<<<<<<< HEAD
 //=======
+=======
+
+>>>>>>> 111cc31e19b4f2d8fae02daa95b6a5722bf206d0
 
   //Feride Data base query
-    fit('Should verify email field accepts only correct email format',()=>{
+    it('Should verify email field accepts only correct email format',()=>{
         db.any(queries.wrongEmail)
         .then(function(result){
             array=result
@@ -122,6 +161,18 @@ describe('BookIT Home Page test scripts', () => {
             })
            
         })
+        it('Should verify password field has "password" place holder',()=>{
+            expect(HomePage.passwordPlaceHolder.getAttribute("placeholder")).toEqual("password");
+               
+           })
+       
+        it(' should be disabled "sign in" button when email & password fields empty',()=>{
+               expect(HomePage.signButton.isDisplayed()).toBe(true);
+                    
+           })
    //test1
+<<<<<<< HEAD
 //>>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
+=======
+>>>>>>> 111cc31e19b4f2d8fae02daa95b6a5722bf206d0
 });
