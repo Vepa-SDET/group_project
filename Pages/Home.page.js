@@ -13,6 +13,10 @@ let HomePage=function(){
     this.password=element(by.name("password"));
     this.signinButton=$(".button.is-dark");
     
+    //
+    this.email=element(by.name("email"));
+    this.passwordPlaceHolder=element(by.name("password"));
+    this.signButton=element(by.css(".control>button"));
 
 }
 module.exports=new HomePage();
