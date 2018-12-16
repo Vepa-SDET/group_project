@@ -49,14 +49,16 @@ describe('BookIT Home Page test scripts', () => {
             browser.waitForAngularEnabled(false);
             expect(browser.getTitle()).toEqual(Data.gitHubTitle.text);
         });
-        
+        browser.close().then(()=>{
+            browser.switchTo().window( browserWindows[0]);
+        }); 
     });
 
     it('should Verify Question Circle "?" icon is enabled', () => {
         expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
-});
+    });
 
-    fit('should verify "Question" icon swithced to Mailto window when clicked', () => {
+    xit('should verify "Question" icon swithced to Mailto window when clicked', () => {
         let questionWindow="";
         browser.close().then(()=>{
             browser.switchTo().window( browserWindows[0]);
@@ -76,7 +78,7 @@ describe('BookIT Home Page test scripts', () => {
         });
         
     });
-<<<<<<< HEAD
+//<<<<<<< HEAD
     
     it('should Verify "Git Hub" icon is visible', () => {
         expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
@@ -91,7 +93,7 @@ describe('BookIT Home Page test scripts', () => {
     expect(HomePage.homePageGithublink.getCssValue("color")).toEqual("rgba(54, 54, 54, 1)");
     });
    
-=======
+//=======
 
   //Feride Data base query
     fit('Should verify email field accepts only correct email format',()=>{
@@ -121,5 +123,5 @@ describe('BookIT Home Page test scripts', () => {
            
         })
    //test1
->>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
+//>>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
 });
