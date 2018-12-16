@@ -28,6 +28,18 @@ describe('BookIT Home Page test scripts', () => {
     
     });
 
+    it('should verify email field', () => {
+        expect(HomePage.homePageEmailLoginBar.isDisplayed()).toBe(true);
+    });
+    
+    it('should verify password field', () => {
+        expect(HomePage.homePagePasswordBar.isDisplayed()).toBe(true);
+    });
+    
+    it('should verify email field has "email" place holder', () => {
+        expect(HomePage.homePageEmailLoginBar.getAttribute("placeholder")).toEqual("email");
+    });
+
     it('should verify Login functionality with invalid credentials', () => {
         HomePage.homePageEmailLoginBar.sendKeys(Data.invalidUser.email);
         HomePage.homePagePasswordBar.sendKeys(Data.invalidUser.password);
@@ -37,17 +49,17 @@ describe('BookIT Home Page test scripts', () => {
     });
 
     it('should Verify Question Circle "?" icon is enabled', () => {
-        expect(HomePage.homePageQuestionLink.isDisplayed()).toBe(true);
+        expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
     });
 
     it('should Verify "Git Hub" icon color changes if we hover over', () => {
         HomePage.homePageGitHubLink.getCssValue("color").then(function(colorValue){
-        console.log("first color value: "+colorValue);        
+        //console.log("first color value: "+colorValue);        
     
-         browser.actions().mouseMove(HomePage.gitHubIcon).perform();
+         browser.actions().mouseMove(HomePage.homePageGitHubLink).perform();
 
          HomePage.homePageGitHubLink.getCssValue("color").then(function(colorValue2){
-        console.log("color value after hover over: "+colorValue2);
+        //console.log("color value after hover over: "+colorValue2);
 
         expect(colorValue).not.toEqual(colorValue2);
          });
@@ -55,8 +67,8 @@ describe('BookIT Home Page test scripts', () => {
     });
 
     it('should Verify "Git Hub" icon is visible', () => {
-        expect(HomePage.gitHubIcon.isDisplayed()).toBe(true);
-        expect(HomePage.gitHubIcon.isPresent()).toBe(true);
+        expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
+        expect(HomePage.homePageGitHubLink.isPresent()).toBe(true);
     });
 
 
@@ -160,5 +172,19 @@ describe('BookIT Home Page test scripts', () => {
                     
            })
    //test1
+<<<<<<< HEAD
 //>>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
+
+
+
+=======
+//>>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
+>>>>>>> 4bbc1aacd46581e82034adf34b7be0964e9d9257
+=======
+>>>>>>> 111cc31e19b4f2d8fae02daa95b6a5722bf206d0
+>>>>>>> 6ce0133b88541fe772cb98ec1de1ace6e635e0bc
 });

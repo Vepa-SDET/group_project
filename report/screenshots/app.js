@@ -235,7 +235,11 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "passed": true,
         "pending": false,
         "os": "Windows NT",
+<<<<<<< HEAD
         "instanceId": 11824,
+=======
+        "instanceId": 1268,
+>>>>>>> 6ce0133b88541fe772cb98ec1de1ace6e635e0bc
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
@@ -243,6 +247,7 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
+<<<<<<< HEAD
         "screenShotFile": "images\\005b007e-00c8-00a0-00f3-001b000100dd.png",
         "timestamp": 1544943828078,
         "duration": 70
@@ -270,12 +275,25 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "pending": false,
         "os": "Windows NT",
         "instanceId": 11824,
+=======
+        "screenShotFile": "images\\00e4000a-0081-00c0-0054-00c900d60023.png",
+        "timestamp": 1544943703796,
+        "duration": 55
+    },
+    {
+        "description": "should check Sign in text on the Home Page|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 1268,
+>>>>>>> 6ce0133b88541fe772cb98ec1de1ace6e635e0bc
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
         },
         "message": "Passed.",
         "trace": "",
+<<<<<<< HEAD
         "browserLogs": [
             {
                 "level": "SEVERE",
@@ -335,10 +353,24 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "pending": false,
         "os": "Windows NT",
         "instanceId": 11824,
+=======
+        "browserLogs": [],
+        "screenShotFile": "images\\00f300bf-00ea-00ef-0064-009800bd0081.png",
+        "timestamp": 1544943704506,
+        "duration": 110
+    },
+    {
+        "description": "should verify Login functionality with invalid credentials|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 1268,
+>>>>>>> 6ce0133b88541fe772cb98ec1de1ace6e635e0bc
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
         },
+<<<<<<< HEAD
         "message": [
             "Failed: Cannot read property 'x' of undefined"
         ],
@@ -356,10 +388,63 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "pending": false,
         "os": "Windows NT",
         "instanceId": 11824,
+=======
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/sign?email=dfre5@yellowbook.com&password=enguc - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544943706131,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544943706363,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544943706363,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/sign-in - Access to XMLHttpRequest at 'https://cybertek-reservation-api-qa.herokuapp.com/api/users/me' from origin 'https://cybertek-reservation-qa.herokuapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+                "timestamp": 1544943706363,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/campuses/my - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544943706363,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js 55974:18 \"ERROR\" TypeError: __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__.a.throw is not a function\n    at CatchSubscriber.selector (https://cybertek-reservation-qa.herokuapp.com/main.bundle.js:3810:228)\n    at CatchSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/operators/catchError.js.CatchSubscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:149485:31)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at MergeMapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/OuterSubscriber.js.OuterSubscriber.notifyError (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145944:26)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/InnerSubscriber.js.InnerSubscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145670:21)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FinallySubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)",
+                "timestamp": 1544943706363,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "images\\00060086-000d-0070-00f1-003b00f500ee.png",
+        "timestamp": 1544943705152,
+        "duration": 4627
+    },
+    {
+        "description": "should Verify Question Circle \"?\" icon is enabled|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 1268,
+>>>>>>> 6ce0133b88541fe772cb98ec1de1ace6e635e0bc
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
         },
+<<<<<<< HEAD
         "message": [
             "Failed: Cannot read property 'isDisplayed' of undefined"
         ],
@@ -411,20 +496,45 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "pending": true,
         "os": "Windows NT",
         "instanceId": 11824,
+=======
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00e300e3-00aa-0084-0099-003c008400a0.png",
+        "timestamp": 1544943710323,
+        "duration": 54
+    },
+    {
+        "description": "should Verify \"Git Hub\" icon color changes if we hover over|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 1268,
+>>>>>>> 6ce0133b88541fe772cb98ec1de1ace6e635e0bc
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
         },
+<<<<<<< HEAD
         "message": "Temporarily disabled with xit",
         "browserLogs": [],
         "screenShotFile": "images\\00d30023-0028-0019-0025-000900c300e9.png",
         "timestamp": 1544943847780,
         "duration": 0
+=======
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\003100c8-0064-00f8-008a-007700fd007d.png",
+        "timestamp": 1544943710934,
+        "duration": 141
+>>>>>>> 6ce0133b88541fe772cb98ec1de1ace6e635e0bc
     },
     {
         "description": "should Verify \"Git Hub\" icon is visible|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
+<<<<<<< HEAD
         "os": "Windows NT",
         "instanceId": 11824,
         "browser": {
@@ -498,10 +608,15 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "pending": false,
         "os": "Windows NT",
         "instanceId": 11824,
+=======
+        "os": "Windows NT",
+        "instanceId": 1268,
+>>>>>>> 6ce0133b88541fe772cb98ec1de1ace6e635e0bc
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
         },
+<<<<<<< HEAD
         "message": [
             "Failed: Cannot read property 'getAttribute' of undefined"
         ],
@@ -519,10 +634,26 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "pending": false,
         "os": "Windows NT",
         "instanceId": 11824,
+=======
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\009900ea-00cb-0054-00c3-0024000d00fe.png",
+        "timestamp": 1544943711670,
+        "duration": 76
+    },
+    {
+        "description": "should verify \"Git Hub\" icon is forwarding to Git Hub website when clicked|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 1268,
+>>>>>>> 6ce0133b88541fe772cb98ec1de1ace6e635e0bc
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
         },
+<<<<<<< HEAD
         "message": [
             "Failed: Cannot read property 'isDisplayed' of undefined"
         ],
@@ -810,6 +941,14 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "screenShotFile": "images\\0045009f-00b6-00bc-008c-00e8008e00f1.png",
         "timestamp": 1544943853011,
         "duration": 29050
+=======
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00620035-001c-00be-00c4-00f1005a0052.png",
+        "timestamp": 1544943712270,
+        "duration": 3912
+>>>>>>> 6ce0133b88541fe772cb98ec1de1ace6e635e0bc
     }
 ];
 
