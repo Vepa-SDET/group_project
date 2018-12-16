@@ -36,24 +36,8 @@ describe('BookIT Home Page test scripts', () => {
 
     });
 
-    it('should verify "Git Hub" icon is forwarding to Git Hub website when clicked', () => {
-        
-        HomePage.homePageGitHubLink.click();
-        let gitWindow="";
-        browser.driver.getAllWindowHandles().then((h)=>{
-            browserWindows=h;
-            gitWindow=h[1];
-        });
-        
-        browser.driver.switchTo().window(gitWindow).then(()=>{
-            browser.waitForAngularEnabled(false);
-            expect(browser.getTitle()).toEqual(Data.gitHubTitle.text);
-        });
-        
-    });
-
     it('should Verify Question Circle "?" icon is enabled', () => {
-        expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
+        expect(HomePage.homePageQuestionLink.isDisplayed()).toBe(true);
     });
 
     it('should Verify "Git Hub" icon color changes if we hover over', () => {
@@ -74,6 +58,26 @@ describe('BookIT Home Page test scripts', () => {
         expect(HomePage.gitHubIcon.isDisplayed()).toBe(true);
         expect(HomePage.gitHubIcon.isPresent()).toBe(true);
     });
+
+
+
+    it('should verify "Git Hub" icon is forwarding to Git Hub website when clicked', () => {
+        
+        HomePage.homePageGitHubLink.click();
+        let gitWindow="";
+        browser.driver.getAllWindowHandles().then((h)=>{
+            browserWindows=h;
+            gitWindow=h[1];
+        });
+        
+        browser.driver.switchTo().window(gitWindow).then(()=>{
+            browser.waitForAngularEnabled(false);
+            expect(browser.getTitle()).toEqual(Data.gitHubTitle.text);
+        });
+        
+    });
+
+   
 
     it('should verify "Question" icon swithced to Mailto window when clicked', () => {
         let questionWindow="";
@@ -113,7 +117,7 @@ describe('BookIT Home Page test scripts', () => {
 
 
   //Feride Data base query
-    fit('Should verify email field accepts only correct email format',()=>{
+    it('Should verify email field accepts only correct email format',()=>{
         db.any(queries.wrongEmail)
         .then(function(result){
             array=result
@@ -149,8 +153,4 @@ describe('BookIT Home Page test scripts', () => {
                     
            })
    //test1
-<<<<<<< HEAD
-=======
-
->>>>>>> 5c904872f8ee5edee462a6803d04169bfd8f60a2
 });
