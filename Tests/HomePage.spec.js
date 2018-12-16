@@ -76,7 +76,7 @@ describe('BookIT Home Page test scripts', () => {
         });
         
     });
-<<<<<<< HEAD
+
     
     it('should Verify "Git Hub" icon is visible', () => {
         expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
@@ -91,7 +91,7 @@ describe('BookIT Home Page test scripts', () => {
     expect(HomePage.homePageGithublink.getCssValue("color")).toEqual("rgba(54, 54, 54, 1)");
     });
    
-=======
+
 
   //Feride Data base query
     fit('Should verify email field accepts only correct email format',()=>{
@@ -130,5 +130,5 @@ describe('BookIT Home Page test scripts', () => {
                     
            })
    //test1
->>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
+
 });
