@@ -79,17 +79,11 @@ describe('BookIT Home Page test scripts', () => {
         }); 
     });
 
-<<<<<<< HEAD
     it('should Verify Question Circle "?" icon is enabled', () => {
         expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
     });
 
     xit('should verify "Question" icon swithced to Mailto window when clicked', () => {
-=======
-   
-
-    it('should verify "Question" icon swithced to Mailto window when clicked', () => {
->>>>>>> 111cc31e19b4f2d8fae02daa95b6a5722bf206d0
         let questionWindow="";
         browser.close().then(()=>{
             browser.switchTo().window( browserWindows[0]);
@@ -109,11 +103,7 @@ describe('BookIT Home Page test scripts', () => {
         });
         
     });
-<<<<<<< HEAD
 //<<<<<<< HEAD
-=======
-
->>>>>>> 111cc31e19b4f2d8fae02daa95b6a5722bf206d0
     
     it('should Verify "Git Hub" icon is visible', () => {
         expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
@@ -128,11 +118,7 @@ describe('BookIT Home Page test scripts', () => {
     expect(HomePage.homePageGithublink.getCssValue("color")).toEqual("rgba(54, 54, 54, 1)");
     });
    
-<<<<<<< HEAD
 //=======
-=======
-
->>>>>>> 111cc31e19b4f2d8fae02daa95b6a5722bf206d0
 
   //Feride Data base query
     it('Should verify email field accepts only correct email format',()=>{
@@ -162,17 +148,17 @@ describe('BookIT Home Page test scripts', () => {
            
         })
         it('Should verify password field has "password" place holder',()=>{
-            expect(HomePage.passwordPlaceHolder.getAttribute("placeholder")).toEqual("password");
+            HomePage.homePagePasswordBar.clear(); 
+            expect(HomePage.homePagePasswordBar.getAttribute("placeholder")).toEqual("password");
                
            })
        
         it(' should be disabled "sign in" button when email & password fields empty',()=>{
-               expect(HomePage.signButton.isDisplayed()).toBe(true);
+            HomePage.homePagePasswordBar.clear(); 
+            HomePage.homePageEmailLoginBar.clear();
+            expect(HomePage.homePageSignInButton.isDisplayed()).toBe(true);
                     
            })
    //test1
-<<<<<<< HEAD
 //>>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
-=======
->>>>>>> 111cc31e19b4f2d8fae02daa95b6a5722bf206d0
 });
