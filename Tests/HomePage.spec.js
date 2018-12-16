@@ -28,6 +28,18 @@ describe('BookIT Home Page test scripts', () => {
     
     });
 
+    it('should verify email field', () => {
+        expect(HomePage.homePageEmailLoginBar.isDisplayed()).toBe(true);
+    });
+    
+    it('should verify password field', () => {
+        expect(HomePage.homePagePasswordBar.isDisplayed()).toBe(true);
+    });
+    
+    it('should verify email field has "email" place holder', () => {
+        expect(HomePage.homePageEmailLoginBar.getAttribute("placeholder")).toEqual("email");
+    });
+
     it('should verify Login functionality with invalid credentials', () => {
         HomePage.homePageEmailLoginBar.sendKeys(Data.invalidUser.email);
         HomePage.homePagePasswordBar.sendKeys(Data.invalidUser.password);
@@ -36,7 +48,32 @@ describe('BookIT Home Page test scripts', () => {
 
     });
 
-    fit('should verify "Git Hub" icon is forwarding to Git Hub website when clicked', () => {
+    it('should Verify Question Circle "?" icon is enabled', () => {
+        expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
+    });
+
+    it('should Verify "Git Hub" icon color changes if we hover over', () => {
+        HomePage.homePageGitHubLink.getCssValue("color").then(function(colorValue){
+        //console.log("first color value: "+colorValue);        
+    
+         browser.actions().mouseMove(HomePage.homePageGitHubLink).perform();
+
+         HomePage.homePageGitHubLink.getCssValue("color").then(function(colorValue2){
+        //console.log("color value after hover over: "+colorValue2);
+
+        expect(colorValue).not.toEqual(colorValue2);
+         });
+      });
+    });
+
+    it('should Verify "Git Hub" icon is visible', () => {
+        expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
+        expect(HomePage.homePageGitHubLink.isPresent()).toBe(true);
+    });
+
+
+
+    it('should verify "Git Hub" icon is forwarding to Git Hub website when clicked', () => {
         
         HomePage.homePageGitHubLink.click();
         let gitWindow="";
@@ -49,14 +86,16 @@ describe('BookIT Home Page test scripts', () => {
             browser.waitForAngularEnabled(false);
             expect(browser.getTitle()).toEqual(Data.gitHubTitle.text);
         });
-        
+        browser.close().then(()=>{
+            browser.switchTo().window( browserWindows[0]);
+        }); 
     });
 
     it('should Verify Question Circle "?" icon is enabled', () => {
         expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
-});
+    });
 
-    fit('should verify "Question" icon swithced to Mailto window when clicked', () => {
+    xit('should verify "Question" icon swithced to Mailto window when clicked', () => {
         let questionWindow="";
         browser.close().then(()=>{
             browser.switchTo().window( browserWindows[0]);
@@ -76,7 +115,7 @@ describe('BookIT Home Page test scripts', () => {
         });
         
     });
-
+//<<<<<<< HEAD
     
     it('should Verify "Git Hub" icon is visible', () => {
         expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
@@ -91,10 +130,10 @@ describe('BookIT Home Page test scripts', () => {
     expect(HomePage.homePageGithublink.getCssValue("color")).toEqual("rgba(54, 54, 54, 1)");
     });
    
-
+//=======
 
   //Feride Data base query
-    fit('Should verify email field accepts only correct email format',()=>{
+    it('Should verify email field accepts only correct email format',()=>{
         db.any(queries.wrongEmail)
         .then(function(result){
             array=result
@@ -121,12 +160,15 @@ describe('BookIT Home Page test scripts', () => {
            
         })
         it('Should verify password field has "password" place holder',()=>{
-            expect(HomePage.passwordPlaceHolder.getAttribute("placeholder")).toEqual("password");
+            HomePage.homePagePasswordBar.clear(); 
+            expect(HomePage.homePagePasswordBar.getAttribute("placeholder")).toEqual("password");
                
            })
        
         it(' should be disabled "sign in" button when email & password fields empty',()=>{
-               expect(HomePage.signButton.isDisplayed()).toBe(true);
+            HomePage.homePagePasswordBar.clear(); 
+            HomePage.homePageEmailLoginBar.clear();
+            expect(HomePage.homePageSignInButton.isDisplayed()).toBe(true);
                     
            })
    //test1
