@@ -47,6 +47,10 @@ describe('BookIT Home Page test scripts', () => {
         
     });
 
+    it('should Verify Question Circle "?" icon is enabled', () => {
+        expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
+});
+
     fit('should verify "Question" icon swithced to Mailto window when clicked', () => {
         let questionWindow="";
         browser.close().then(()=>{
