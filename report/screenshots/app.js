@@ -231,11 +231,11 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
 
     var results = [
     {
-        "description": "should Verify Question Circle \"?\" icon is enabled|BookIT Home Page test scripts",
+        "description": "should print out the Title|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "instanceId": 20720,
+        "instanceId": 1268,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
@@ -243,217 +243,148 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00c6001c-0075-009f-00c9-0051008b0034.png",
-        "timestamp": 1544943205204,
-        "duration": 75
-    },
-    {
-        "description": "should print out the Title|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 20720,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images\\00b1005a-00ad-0003-004c-00cb00c6006b.png",
-        "timestamp": 1544943206325,
-        "duration": 0
+        "screenShotFile": "images\\00e4000a-0081-00c0-0054-00c900d60023.png",
+        "timestamp": 1544943703796,
+        "duration": 55
     },
     {
         "description": "should check Sign in text on the Home Page|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
+        "passed": true,
+        "pending": false,
         "os": "Windows NT",
-        "instanceId": 20720,
+        "instanceId": 1268,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00f300ff-0057-005b-0038-000200df009f.png",
-        "timestamp": 1544943206343,
-        "duration": 1
+        "screenShotFile": "images\\00f300bf-00ea-00ef-0064-009800bd0081.png",
+        "timestamp": 1544943704506,
+        "duration": 110
     },
     {
         "description": "should verify Login functionality with invalid credentials|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
+        "passed": true,
+        "pending": false,
         "os": "Windows NT",
-        "instanceId": 20720,
+        "instanceId": 1268,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images\\002a0007-00fc-0030-00a4-002a00e90065.png",
-        "timestamp": 1544943206470,
-        "duration": 0
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/sign?email=dfre5@yellowbook.com&password=enguc - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544943706131,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544943706363,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544943706363,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/sign-in - Access to XMLHttpRequest at 'https://cybertek-reservation-api-qa.herokuapp.com/api/users/me' from origin 'https://cybertek-reservation-qa.herokuapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+                "timestamp": 1544943706363,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/campuses/my - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544943706363,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js 55974:18 \"ERROR\" TypeError: __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__.a.throw is not a function\n    at CatchSubscriber.selector (https://cybertek-reservation-qa.herokuapp.com/main.bundle.js:3810:228)\n    at CatchSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/operators/catchError.js.CatchSubscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:149485:31)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at MergeMapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/OuterSubscriber.js.OuterSubscriber.notifyError (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145944:26)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/InnerSubscriber.js.InnerSubscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145670:21)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FinallySubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)",
+                "timestamp": 1544943706363,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "images\\00060086-000d-0070-00f1-003b00f500ee.png",
+        "timestamp": 1544943705152,
+        "duration": 4627
     },
     {
-        "description": "should verify \"Git Hub\" icon is forwarding to Git Hub website when clicked|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
+        "description": "should Verify Question Circle \"?\" icon is enabled|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
         "os": "Windows NT",
-        "instanceId": 20720,
+        "instanceId": 1268,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00bc0040-0084-009f-0039-006f003a0081.png",
-        "timestamp": 1544943206488,
-        "duration": 0
+        "screenShotFile": "images\\00e300e3-00aa-0084-0099-003c008400a0.png",
+        "timestamp": 1544943710323,
+        "duration": 54
     },
     {
         "description": "should Verify \"Git Hub\" icon color changes if we hover over|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
+        "passed": true,
+        "pending": false,
         "os": "Windows NT",
-        "instanceId": 20720,
+        "instanceId": 1268,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\008d00e1-00ef-00f6-00ca-00b3000500b4.png",
-        "timestamp": 1544943206506,
-        "duration": 0
+        "screenShotFile": "images\\003100c8-0064-00f8-008a-007700fd007d.png",
+        "timestamp": 1544943710934,
+        "duration": 141
     },
     {
         "description": "should Verify \"Git Hub\" icon is visible|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
+        "passed": true,
+        "pending": false,
         "os": "Windows NT",
-        "instanceId": 20720,
+        "instanceId": 1268,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00fb00a7-000f-0093-005e-00d5007c0057.png",
-        "timestamp": 1544943206526,
-        "duration": 0
+        "screenShotFile": "images\\009900ea-00cb-0054-00c3-0024000d00fe.png",
+        "timestamp": 1544943711670,
+        "duration": 76
     },
     {
-        "description": "should verify \"Question\" icon swithced to Mailto window when clicked|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
+        "description": "should verify \"Git Hub\" icon is forwarding to Git Hub website when clicked|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
         "os": "Windows NT",
-        "instanceId": 20720,
+        "instanceId": 1268,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00bc0050-009f-00a9-0072-00b500a90048.png",
-        "timestamp": 1544943206547,
-        "duration": 0
-    },
-    {
-        "description": "should Verify \"Git Hub\" icon is visible|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 20720,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images\\00890080-006c-00b2-00de-004b00590014.png",
-        "timestamp": 1544943206569,
-        "duration": 0
-    },
-    {
-        "description": "should Verify \"Git Hub\" icon color changes if we hover over |BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 20720,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images\\004d0010-0065-00ee-00e5-005d00160039.png",
-        "timestamp": 1544943206604,
-        "duration": 0
-    },
-    {
-        "description": "should verify  \"?\" icon is enabled|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 20720,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images\\003b0039-00f0-0068-0073-009300100062.png",
-        "timestamp": 1544943206622,
-        "duration": 0
-    },
-    {
-        "description": "Should verify email field accepts only correct email format|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 20720,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images\\00f9009e-007e-005a-0070-00a60083000d.png",
-        "timestamp": 1544943206638,
-        "duration": 0
-    },
-    {
-        "description": "Should verify password field has \"password\" place holder|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 20720,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images\\002d0014-0027-006d-009d-0040003d000e.png",
-        "timestamp": 1544943206658,
-        "duration": 0
-    },
-    {
-        "description": " should be disabled \"sign in\" button when email & password fields empty|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 20720,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images\\00a30063-0079-00e5-008f-007200c30013.png",
-        "timestamp": 1544943206689,
-        "duration": 0
+        "screenShotFile": "images\\00620035-001c-00be-00c4-00f1005a0052.png",
+        "timestamp": 1544943712270,
+        "duration": 3912
     }
 ];
 

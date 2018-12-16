@@ -12,5 +12,8 @@
     "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.4.1",
     "protractor-beautiful-reporter": "^1.2.7"
+  },
+  "dependencies": {
+    "pg-promise": "^8.5.4"
   }
 }

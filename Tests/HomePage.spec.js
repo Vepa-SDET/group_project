@@ -37,17 +37,17 @@ describe('BookIT Home Page test scripts', () => {
     });
 
     it('should Verify Question Circle "?" icon is enabled', () => {
-        expect(HomePage.homePageQuestionLink.isDisplayed()).toBe(true);
+        expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
     });
 
     it('should Verify "Git Hub" icon color changes if we hover over', () => {
         HomePage.homePageGitHubLink.getCssValue("color").then(function(colorValue){
-        console.log("first color value: "+colorValue);        
+        //console.log("first color value: "+colorValue);        
     
-         browser.actions().mouseMove(HomePage.gitHubIcon).perform();
+         browser.actions().mouseMove(HomePage.homePageGitHubLink).perform();
 
          HomePage.homePageGitHubLink.getCssValue("color").then(function(colorValue2){
-        console.log("color value after hover over: "+colorValue2);
+        //console.log("color value after hover over: "+colorValue2);
 
         expect(colorValue).not.toEqual(colorValue2);
          });
@@ -55,8 +55,8 @@ describe('BookIT Home Page test scripts', () => {
     });
 
     it('should Verify "Git Hub" icon is visible', () => {
-        expect(HomePage.gitHubIcon.isDisplayed()).toBe(true);
-        expect(HomePage.gitHubIcon.isPresent()).toBe(true);
+        expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
+        expect(HomePage.homePageGitHubLink.isPresent()).toBe(true);
     });
 
 
