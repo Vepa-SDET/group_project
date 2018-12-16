@@ -7,6 +7,8 @@ let HomePage=function(){
     this.homePageGitHubLink=$("[class='fa fa-github']");
     this.homePageQuestionLink=$("[class='fa fa-question-circle']");
 
+   
+    
     
 
 }
