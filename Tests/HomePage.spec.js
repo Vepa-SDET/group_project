@@ -191,6 +191,8 @@ describe('BookIT Home Page test scripts', () => {
             HomePage.homePageEmailLoginBar.clear();
             expect(HomePage.homePageSignInButton.isDisplayed()).toBe(true);
                     
-           });     
+           });   
+           
+           //vahdet2 branch
 
 //testing develop at 12:20
