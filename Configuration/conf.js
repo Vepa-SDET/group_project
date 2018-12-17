@@ -15,12 +15,12 @@ exports.config = {
   
 //  specs: ['../Tests/MapPage.spec.js'], 
 
-specs: ['../Tests/HomePage.spec.js', '../Tests/MapPage.spec.js'],
+//specs: ['../Tests/HomePage.spec.js', '../Tests/MapPage.spec.js'],
 
-  // suites:{
-  //   smoke: ['../Tests/HomePage.spec.js', '../Tests/MapPage.spec.js'],   //protractor conf.js --suites smoke
-  //   //regression: ['../Tests/*.spec.js']
-  // },
+  suites:{
+    smoke: ['../Tests/HomePage.spec.js', '../Tests/MapPage.spec.js'],   //protractor conf.js --suites smoke
+    //regression: ['../Tests/*.spec.js']
+  },
 
 onPrepare: function () {
     browser.manage().timeouts().implicitlyWait(10000);
