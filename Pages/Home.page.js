@@ -7,17 +7,15 @@ let HomePage=function(){
     this.homePageGitHubLink=$("[class='fa fa-github']");
     this.homePageQuestionLink=$("[class='fa fa-question-circle']");
 
-<<<<<<< HEAD
-   
-    
-=======
-    // Kadriye
-    this.HomePageLogo=$(".title");
-    this.email=element(by.name("email"));
-    this.password=element(by.name("password"));
-    this.signinButton=$(".button.is-dark");
->>>>>>> 82482c96bc88dd6ac955224c87701b268b85153d
-    
+    this.HomePagesignInButton=element(by.css('.button.is-dark'));
+    this.HomePagecontentText=element(by.css('.content.has-text-centered'));
+    //resul
+    // this.gitHubIcon=$(".fa.fa-github");
+    this.questionCircle = $(".fa.fa-question-circle");
+    this.password=$("input[name='password']");
+
+
+
 
 }
 module.exports=new HomePage();
