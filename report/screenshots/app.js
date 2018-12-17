@@ -235,7 +235,7 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "instanceId": 25440,
+        "instanceId": 10024,
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
@@ -243,16 +243,16 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00a7001e-00fc-0047-00f2-0092002800b4.png",
-        "timestamp": 1544945326307,
-        "duration": 45
+        "screenShotFile": "images\\00560089-00aa-0032-00f0-003600c00042.png",
+        "timestamp": 1544947526244,
+        "duration": 58
     },
     {
         "description": "should check Sign in text on the Home Page|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "instanceId": 25440,
+        "instanceId": 10024,
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
@@ -260,16 +260,16 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00930094-0033-0052-007a-003d00830033.png",
-        "timestamp": 1544945327351,
-        "duration": 93
+        "screenShotFile": "images\\00dd00b9-0050-002d-0068-0013006c00bf.png",
+        "timestamp": 1544947527233,
+        "duration": 79
     },
     {
         "description": "should verify email field|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "instanceId": 25440,
+        "instanceId": 10024,
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
@@ -277,16 +277,16 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00c70072-00ef-001a-004d-00630072008d.png",
-        "timestamp": 1544945328690,
-        "duration": 299
+        "screenShotFile": "images\\00fd0016-00ef-00cb-0044-00b100d20048.png",
+        "timestamp": 1544947528234,
+        "duration": 62
     },
     {
         "description": "should verify password field|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "instanceId": 25440,
+        "instanceId": 10024,
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
@@ -294,16 +294,16 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00920044-002e-0065-0077-0071006300de.png",
-        "timestamp": 1544945329994,
-        "duration": 40
+        "screenShotFile": "images\\00500006-006f-000f-005b-001100e10029.png",
+        "timestamp": 1544947529108,
+        "duration": 38
     },
     {
         "description": "should verify email field has \"email\" place holder|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "instanceId": 25440,
+        "instanceId": 10024,
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
@@ -311,16 +311,16 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00e10086-0054-0082-0015-0009002e00fa.png",
-        "timestamp": 1544945331042,
-        "duration": 55
+        "screenShotFile": "images\\002f0027-009c-0011-003d-0010001a00ed.png",
+        "timestamp": 1544947529954,
+        "duration": 24
     },
     {
         "description": "should verify Login functionality with invalid credentials|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "instanceId": 25440,
+        "instanceId": 10024,
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
@@ -331,44 +331,44 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
             {
                 "level": "SEVERE",
                 "message": "https://cybertek-reservation-api-qa.herokuapp.com/sign?email=dfre5@yellowbook.com&password=enguc - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
-                "timestamp": 1544945334216,
+                "timestamp": 1544947533081,
                 "type": ""
             },
             {
                 "level": "SEVERE",
                 "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
-                "timestamp": 1544945334685,
+                "timestamp": 1544947533826,
                 "type": ""
             },
             {
                 "level": "SEVERE",
                 "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
-                "timestamp": 1544945334685,
+                "timestamp": 1544947533826,
                 "type": ""
             },
             {
                 "level": "SEVERE",
                 "message": "https://cybertek-reservation-qa.herokuapp.com/sign-in - Access to XMLHttpRequest at 'https://cybertek-reservation-api-qa.herokuapp.com/api/users/me' from origin 'https://cybertek-reservation-qa.herokuapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
-                "timestamp": 1544945334685,
+                "timestamp": 1544947533826,
                 "type": ""
             },
             {
                 "level": "SEVERE",
                 "message": "https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js 55974:18 \"ERROR\" TypeError: __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__.a.throw is not a function\n    at CatchSubscriber.selector (https://cybertek-reservation-qa.herokuapp.com/main.bundle.js:3810:228)\n    at CatchSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/operators/catchError.js.CatchSubscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:149485:31)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at MergeMapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/OuterSubscriber.js.OuterSubscriber.notifyError (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145944:26)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/InnerSubscriber.js.InnerSubscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145670:21)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FinallySubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)",
-                "timestamp": 1544945334686,
+                "timestamp": 1544947533826,
                 "type": ""
             }
         ],
-        "screenShotFile": "images\\006d0096-00ad-005a-0036-001e00100044.png",
-        "timestamp": 1544945332356,
-        "duration": 5789
+        "screenShotFile": "images\\000800ce-0086-000c-00d5-006d00a400e3.png",
+        "timestamp": 1544947530820,
+        "duration": 6393
     },
     {
         "description": "should Verify Question Circle \"?\" icon is enabled|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "instanceId": 25440,
+        "instanceId": 10024,
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
@@ -376,16 +376,16 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00720054-0077-00ea-0060-00b700810013.png",
-        "timestamp": 1544945339153,
-        "duration": 35
+        "screenShotFile": "images\\006d0087-00b4-0003-006c-00ac00d100c0.png",
+        "timestamp": 1544947538060,
+        "duration": 34
     },
     {
         "description": "should Verify \"Git Hub\" icon color changes if we hover over|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "instanceId": 25440,
+        "instanceId": 10024,
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
@@ -393,16 +393,33 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\009f0031-00cc-008d-002f-00ef00b600ff.png",
-        "timestamp": 1544945340088,
-        "duration": 138
+        "screenShotFile": "images\\002f0031-00ae-0018-0088-009400170033.png",
+        "timestamp": 1544947538879,
+        "duration": 110
+    },
+    {
+        "description": "should Verify \"?\" icon color changes if we hover over|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 10024,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00910020-00c5-0021-00f4-00d30030005e.png",
+        "timestamp": 1544947539861,
+        "duration": 91
     },
     {
         "description": "should Verify \"Git Hub\" icon is visible|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "instanceId": 25440,
+        "instanceId": 10024,
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
@@ -410,9 +427,438 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\0066003a-0012-005b-0067-004400690019.png",
-        "timestamp": 1544945341387,
-        "duration": 63
+        "screenShotFile": "images\\00120065-0024-00e1-00e9-00c100ae005a.png",
+        "timestamp": 1544947540763,
+        "duration": 57
+    },
+    {
+        "description": "should verify \"Git Hub\" icon is forwarding to Git Hub website when clicked|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 10024,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00b9008b-0081-0089-0005-009300cd0077.png",
+        "timestamp": 1544947541625,
+        "duration": 8163
+    },
+    {
+        "description": "should Verify Question Circle \"?\" icon is enabled|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 10024,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00ef004a-001d-00ce-0038-004a0092001b.png",
+        "timestamp": 1544947550646,
+        "duration": 19
+    },
+    {
+        "description": "should verify \"Question\" icon swithced to Mailto window when clicked|BookIT Home Page test scripts",
+        "passed": false,
+        "pending": true,
+        "os": "Windows NT",
+        "instanceId": 10024,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Temporarily disabled with xit",
+        "browserLogs": [],
+        "screenShotFile": "images\\005b0092-0027-0099-0038-00e5000b00b9.png",
+        "timestamp": 1544947551458,
+        "duration": 0
+    },
+    {
+        "description": "should Verify \"Git Hub\" icon is visible|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 10024,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\0042005b-0030-00b6-009e-005e00ea0044.png",
+        "timestamp": 1544947551468,
+        "duration": 41
+    },
+    {
+        "description": "should Verify \"Git Hub\" icon color changes if we hover over |BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 10024,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00d90080-0091-0063-0002-004d006800e1.png",
+        "timestamp": 1544947552417,
+        "duration": 15
+    },
+    {
+        "description": "Should verify email field accepts only correct email format|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 10024,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "images\\004f00c1-00e6-00e7-00a4-0035005d0028.png",
+        "timestamp": 1544947553258,
+        "duration": 2
+    },
+    {
+        "description": "Should verify password field has \"password\" place holder|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 10024,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00ec00bc-00f6-0060-00ed-007500e300c5.png",
+        "timestamp": 1544947554086,
+        "duration": 69
+    },
+    {
+        "description": " should be disabled \"sign in\" button when email & password fields empty|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 10024,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/sign?email=dfre5@yellowbook.comNed@gmail.co&password=enguc - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947558412,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/campuses/my - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947558412,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/campuses/my - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947558412,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/sign-in - Access to XMLHttpRequest at 'https://cybertek-reservation-api-qa.herokuapp.com/api/campuses/my' from origin 'https://cybertek-reservation-qa.herokuapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+                "timestamp": 1544947558412,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947558412,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js 55974:18 \"ERROR\" TypeError: __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__.a.throw is not a function\n    at CatchSubscriber.selector (https://cybertek-reservation-qa.herokuapp.com/main.bundle.js:3788:231)\n    at CatchSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/operators/catchError.js.CatchSubscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:149485:31)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at MergeMapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/OuterSubscriber.js.OuterSubscriber.notifyError (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145944:26)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/InnerSubscriber.js.InnerSubscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145670:21)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FinallySubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)",
+                "timestamp": 1544947558412,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/sign?email=Teri@gmail.co&password=enguc - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947561648,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947561648,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947561648,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/sign-in - Access to XMLHttpRequest at 'https://cybertek-reservation-api-qa.herokuapp.com/api/users/me' from origin 'https://cybertek-reservation-qa.herokuapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+                "timestamp": 1544947561648,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js 55974:18 \"ERROR\" TypeError: __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__.a.throw is not a function\n    at CatchSubscriber.selector (https://cybertek-reservation-qa.herokuapp.com/main.bundle.js:3810:228)\n    at CatchSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/operators/catchError.js.CatchSubscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:149485:31)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at MergeMapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/OuterSubscriber.js.OuterSubscriber.notifyError (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145944:26)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/InnerSubscriber.js.InnerSubscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145670:21)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FinallySubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)",
+                "timestamp": 1544947561648,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/sign?email=Angie@gmail.co&password=enguc - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947564836,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/campuses/my - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947564836,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/campuses/my - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947564836,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/sign-in - Access to XMLHttpRequest at 'https://cybertek-reservation-api-qa.herokuapp.com/api/campuses/my' from origin 'https://cybertek-reservation-qa.herokuapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+                "timestamp": 1544947564836,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947564836,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js 55974:18 \"ERROR\" TypeError: __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__.a.throw is not a function\n    at CatchSubscriber.selector (https://cybertek-reservation-qa.herokuapp.com/main.bundle.js:3788:231)\n    at CatchSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/operators/catchError.js.CatchSubscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:149485:31)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at MergeMapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/OuterSubscriber.js.OuterSubscriber.notifyError (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145944:26)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/InnerSubscriber.js.InnerSubscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145670:21)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FinallySubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)",
+                "timestamp": 1544947564838,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/sign?email=Bennett@gmail.co&password=enguc - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947568052,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947568052,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947568052,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/sign-in - Access to XMLHttpRequest at 'https://cybertek-reservation-api-qa.herokuapp.com/api/users/me' from origin 'https://cybertek-reservation-qa.herokuapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+                "timestamp": 1544947568052,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/campuses/my - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947568052,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js 55974:18 \"ERROR\" TypeError: __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__.a.throw is not a function\n    at CatchSubscriber.selector (https://cybertek-reservation-qa.herokuapp.com/main.bundle.js:3810:228)\n    at CatchSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/operators/catchError.js.CatchSubscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:149485:31)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at MergeMapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/OuterSubscriber.js.OuterSubscriber.notifyError (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145944:26)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/InnerSubscriber.js.InnerSubscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145670:21)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FinallySubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)",
+                "timestamp": 1544947568052,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/sign?email=Mariann@gmail.co&password=enguc - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947571243,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947571243,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947571243,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/sign-in - Access to XMLHttpRequest at 'https://cybertek-reservation-api-qa.herokuapp.com/api/users/me' from origin 'https://cybertek-reservation-qa.herokuapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+                "timestamp": 1544947571243,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js 55974:18 \"ERROR\" TypeError: __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__.a.throw is not a function\n    at CatchSubscriber.selector (https://cybertek-reservation-qa.herokuapp.com/main.bundle.js:3810:228)\n    at CatchSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/operators/catchError.js.CatchSubscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:149485:31)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at MergeMapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/OuterSubscriber.js.OuterSubscriber.notifyError (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145944:26)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/InnerSubscriber.js.InnerSubscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145670:21)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FinallySubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)",
+                "timestamp": 1544947571244,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/sign?email=Christophe@gmail.co&password=enguc - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947574471,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947574471,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947574471,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/sign-in - Access to XMLHttpRequest at 'https://cybertek-reservation-api-qa.herokuapp.com/api/users/me' from origin 'https://cybertek-reservation-qa.herokuapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+                "timestamp": 1544947574471,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js 55974:18 \"ERROR\" TypeError: __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__.a.throw is not a function\n    at CatchSubscriber.selector (https://cybertek-reservation-qa.herokuapp.com/main.bundle.js:3810:228)\n    at CatchSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/operators/catchError.js.CatchSubscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:149485:31)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at MergeMapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/OuterSubscriber.js.OuterSubscriber.notifyError (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145944:26)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/InnerSubscriber.js.InnerSubscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145670:21)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FinallySubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)",
+                "timestamp": 1544947574471,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/sign?email=Daryle@gmail.co&password=enguc - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947577654,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947577654,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947577654,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/sign-in - Access to XMLHttpRequest at 'https://cybertek-reservation-api-qa.herokuapp.com/api/users/me' from origin 'https://cybertek-reservation-qa.herokuapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+                "timestamp": 1544947577654,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js 55974:18 \"ERROR\" TypeError: __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__.a.throw is not a function\n    at CatchSubscriber.selector (https://cybertek-reservation-qa.herokuapp.com/main.bundle.js:3810:228)\n    at CatchSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/operators/catchError.js.CatchSubscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:149485:31)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at MergeMapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/OuterSubscriber.js.OuterSubscriber.notifyError (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145944:26)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/InnerSubscriber.js.InnerSubscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145670:21)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FinallySubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)",
+                "timestamp": 1544947577655,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/sign?email=Ruthann@gmail.co&password=enguc - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947580933,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947580933,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947580933,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/sign-in - Access to XMLHttpRequest at 'https://cybertek-reservation-api-qa.herokuapp.com/api/users/me' from origin 'https://cybertek-reservation-qa.herokuapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+                "timestamp": 1544947580933,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js 55974:18 \"ERROR\" TypeError: __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__.a.throw is not a function\n    at CatchSubscriber.selector (https://cybertek-reservation-qa.herokuapp.com/main.bundle.js:3810:228)\n    at CatchSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/operators/catchError.js.CatchSubscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:149485:31)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at MergeMapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/OuterSubscriber.js.OuterSubscriber.notifyError (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145944:26)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/InnerSubscriber.js.InnerSubscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145670:21)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FinallySubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)",
+                "timestamp": 1544947580934,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/sign?email=Merrilee@gmail.co&password=enguc - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947584135,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947584135,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/users/me - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947584135,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/sign-in - Access to XMLHttpRequest at 'https://cybertek-reservation-api-qa.herokuapp.com/api/users/me' from origin 'https://cybertek-reservation-qa.herokuapp.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.",
+                "timestamp": 1544947584135,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-api-qa.herokuapp.com/api/campuses/my - Failed to load resource: the server responded with a status of 422 (Unprocessable Entity)",
+                "timestamp": 1544947584135,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js 55974:18 \"ERROR\" TypeError: __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__.a.throw is not a function\n    at CatchSubscriber.selector (https://cybertek-reservation-qa.herokuapp.com/main.bundle.js:3810:228)\n    at CatchSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/operators/catchError.js.CatchSubscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:149485:31)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at MapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)\n    at FilterSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at MergeMapSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/OuterSubscriber.js.OuterSubscriber.notifyError (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145944:26)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/InnerSubscriber.js.InnerSubscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:145670:21)\n    at InnerSubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber.error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146409:18)\n    at FinallySubscriber.webpackJsonp../node_modules/rxjs/_esm5/internal/Subscriber.js.Subscriber._error (https://cybertek-reservation-qa.herokuapp.com/vendor.bundle.js:146429:26)",
+                "timestamp": 1544947584136,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "images\\00e20083-00ec-00d9-0003-00ef002800c0.png",
+        "timestamp": 1544947555142,
+        "duration": 29173
     }
 ];
 

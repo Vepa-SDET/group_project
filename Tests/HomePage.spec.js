@@ -66,6 +66,20 @@ describe('BookIT Home Page test scripts', () => {
       });
     });
 
+    it('should Verify "?" icon color changes if we hover over', () => {
+        HomePage.homePageQuestionLink.getCssValue("color").then(function(colorValue){
+        //console.log("first color value: "+colorValue);        
+    
+         browser.actions().mouseMove(HomePage.homePageQuestionLink).perform();
+
+         HomePage.homePageQuestionLink.getCssValue("color").then(function(colorValue2){
+        //console.log("color value after hover over: "+colorValue2);
+
+        expect(colorValue).not.toEqual(colorValue2);
+         });
+      });
+    });
+
     it('should Verify "Git Hub" icon is visible', () => {
         expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
         expect(HomePage.homePageGitHubLink.isPresent()).toBe(true);
@@ -84,11 +98,13 @@ describe('BookIT Home Page test scripts', () => {
         
         browser.driver.switchTo().window(gitWindow).then(()=>{
             browser.waitForAngularEnabled(false);
+            browser.sleep(2000);
             expect(browser.getTitle()).toEqual(Data.gitHubTitle.text);
         });
         browser.close().then(()=>{
             browser.switchTo().window( browserWindows[0]);
-        }); 
+        });
+        browser.sleep(2000); 
     });
 
     it('should Verify Question Circle "?" icon is enabled', () => {
@@ -124,15 +140,7 @@ describe('BookIT Home Page test scripts', () => {
     it('should Verify "Git Hub" icon color changes if we hover over ', () =>{
     expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
     });
-    it('should verify  "?" icon is enabled',()=>{
-    browser.actions().mouseMove(HomePage.homePageGithublink).perform();
-        
-    expect(HomePage.homePageGithublink.getCssValue("color")).toEqual("rgba(54, 54, 54, 1)");
-    });
-   
-//=======
-
-  //Feride Data base query
+   //Feride Data base query
     it('Should verify email field accepts only correct email format',()=>{
         db.any(queries.wrongEmail)
         .then(function(result){
@@ -150,10 +158,10 @@ describe('BookIT Home Page test scripts', () => {
             //     HomePage.email.clear();
             //})
               for(var a=0;a<array.length-1;a++){
-                HomePage.email.sendKeys(array[a].firstname+"@gmail.co");
-                HomePage.email.sendKeys(protractor.Key.ENTER)
+                HomePage.homePageEmailLoginBar.sendKeys(array[a].firstname+"@gmail.co");
+                HomePage.homePageEmailLoginBar.sendKeys(protractor.Key.ENTER)
                 browser.sleep(3000)
-                HomePage.email.clear();
+                HomePage.homePageEmailLoginBar.clear();
               }
                 
             })
@@ -171,9 +179,5 @@ describe('BookIT Home Page test scripts', () => {
             expect(HomePage.homePageSignInButton.isDisplayed()).toBe(true);
                     
            })
-<<<<<<< HEAD
-=======
-   //test1
->>>>>>> 9d0b6bc7e24637562d8484c638a5ae0fb6f09125
 
 });
