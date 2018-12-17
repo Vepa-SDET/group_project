@@ -71,5 +71,19 @@ describe('BookIT Map Page test scripts', () => {
         expect(MapPage.mapPagebyBugbusters7Logo.isDisplayed()).toBe(true);
     });
 
+    //Feride
+    it("should verify that CANNOT click the lobby",()=>{
+        expect(MapPage.mapLoby.isEnabled()).toBe(true);
+
+    })
+    it("should verify that CANNOT click the study area",()=>{
+        expect(MapPage.mapStudyArea.isEnabled()).toBe(true);
+
+    })
+    it("should verify that CANNOT click the 4stay area",()=>{
+        expect(MapPage.map4stayArea.isEnabled()).toBe(true);
+
+    })
+
 
 });
