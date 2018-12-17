@@ -190,6 +190,8 @@ describe('BookIT Home Page test scripts', () => {
             HomePage.homePagePasswordBar.clear(); 
             HomePage.homePageEmailLoginBar.clear();
             expect(HomePage.homePageSignInButton.isDisplayed()).toBe(true);
-                    
+             
+            
            });     
 
+//develop test
