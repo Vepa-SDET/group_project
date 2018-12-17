@@ -71,5 +71,12 @@ describe('BookIT Map Page test scripts', () => {
         expect(MapPage.mapPagebyBugbusters7Logo.isDisplayed()).toBe(true);
     });
 
+    it("should verify the 'schedule' dropdown's 'general' option link direct to the correct page", () => {
+        
+    });
+
+// Checked 
+// Checked the "my" dropdown's "self" option link direct the correct page
+// Checked the "my" dropdown's "team" option link direct the correct page
 
 });

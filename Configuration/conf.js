@@ -13,10 +13,7 @@ exports.config = {
     ]
 },
   
-<<<<<<< HEAD
   specs: ['../Tests/MapPage.spec.js'], 
-=======
->>>>>>> cf73d6fff25b96ff223d330f87132eff9ebe85b7
 
 // specs: ['../Tests/HomePage.spec.js'], 
 
