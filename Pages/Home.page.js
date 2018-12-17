@@ -6,6 +6,9 @@ let HomePage=function(){
     this.homePageSignInButton=$("button[type='submit']");
     this.homePageGitHubLink=$("[class='fa fa-github']");
     this.homePageQuestionLink=$("[class='fa fa-question-circle']");
+
+    this.HomePagesignInButton=element(by.css('.button.is-dark'));
+    this.HomePagecontentText=element(by.css('.content.has-text-centered'));
     //resul
     // this.gitHubIcon=$(".fa.fa-github");
     this.questionCircle = $(".fa.fa-question-circle");
