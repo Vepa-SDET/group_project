@@ -84,6 +84,20 @@ describe('BookIT Map Page test scripts', () => {
         expect(MapPage.map4stayArea.isEnabled()).toBe(true);
 
     })
+    fit("should displayed the tap menu  ",()=>{
+        expect(MapPage.mapTopMenu.isDisplayed()).toBe(true);
+
+    })
+    fit("should displayed map text on the tap menu ",()=>{
+       expect(MapPage.mapMapText.getText().isDisplayed()).toBe(true);
+    
+
+    })
+    fit("should displayed schedule text on the tap menu ",()=>{
+        expect(MapPage.mapScheduleText.getText().isDisplayed()).toBe(true);
+     
+ 
+     })
 
 
 });
