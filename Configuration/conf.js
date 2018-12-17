@@ -13,12 +13,13 @@ exports.config = {
     ]
 },
   
-  specs: ['../Tests/HomePage.spec.js','../Tests/MapPage.spec.js'], 
 
-  // suites:{
-  //   smoke: ['../Tests/BankManagerSimple.spec.js', '../Tests/demo.spec.js'],
-  //   regression: ['../Tests/*.spec.js']
-  // },
+// specs: ['../Tests/HomePage.spec.js'], 
+
+  suites:{
+    smoke: ['../Tests/HomePage.spec.js', '../Tests/MapPage.spec.js'],   //protractor conf.js --suites smoke
+    //regression: ['../Tests/*.spec.js']
+  },
 
 onPrepare: function () {
     browser.manage().timeouts().implicitlyWait(10000);

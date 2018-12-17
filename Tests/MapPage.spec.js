@@ -33,6 +33,7 @@ describe('BookIT Map Page test scripts', () => {
                 console.log(error);
             }).then(()=>{
                 HomePage.homePageSignInButton.click();
+                browser.sleep(2000);
                 expect(MapPage.mapPageLogo.getText()).toEqual(MapData.MapPageLogo);
             })
         })
@@ -40,10 +41,12 @@ describe('BookIT Map Page test scripts', () => {
     });
 
     it('should verify dark-side map is displayed', () => {
+        browser.sleep(2000);
         expect(MapPage.mapPageMapImage.isDisplayed()).toBe(true);
     });
 
     it('should verify "VA" and "dark-side" texts are displayed', () => {
+        browser.sleep(2000);
         expect(MapPage.mapPageLogo.getText()).toEqual(MapData.MapPageLogo);
         expect(MapPage.mapPageMapNameElement.getText()).toEqual(MapData.MapPageMapName);
     });
