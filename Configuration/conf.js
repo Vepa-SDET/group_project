@@ -13,7 +13,7 @@ exports.config = {
     ]
 },
   
-  specs: ['../Tests/HomePage.spec.js'], 
+  specs: ['../Tests/MapPage.spec.js'], 
 
   // suites:{
   //   smoke: ['../Tests/BankManagerSimple.spec.js', '../Tests/demo.spec.js'],
@@ -21,6 +21,7 @@ exports.config = {
   // },
 
 onPrepare: function () {
+    browser.manage().timeouts().implicitlyWait(10000);
     //browser.driver.manage().window().maximize();
     jasmine.getEnv().addReporter(new SpecReporter({
         displayFailuresSummary: true,

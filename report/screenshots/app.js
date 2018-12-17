@@ -231,15 +231,21 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
 
     var results = [
     {
-        "description": "should print out the Title|BookIT Home Page test scripts",
+        "description": "should login with \"James May\" info|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
+<<<<<<< HEAD
         "os": "Windows NT",
         "instanceId": 10024,
+=======
+        "os": "Mac OS X",
+        "instanceId": 23183,
+>>>>>>> b0ea225df1d6c84feeff0f549f79ca726c9f162a
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
         },
+<<<<<<< HEAD
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
@@ -379,13 +385,25 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "screenShotFile": "images\\006d0087-00b4-0003-006c-00ac00d100c0.png",
         "timestamp": 1544947538060,
         "duration": 34
+=======
+        "message": "Passed",
+        "browserLogs": [],
+        "screenShotFile": "images/00d1003d-00ec-008c-0061-00d800e900fc.png",
+        "timestamp": 1545004574971,
+        "duration": 5
+>>>>>>> b0ea225df1d6c84feeff0f549f79ca726c9f162a
     },
     {
-        "description": "should Verify \"Git Hub\" icon color changes if we hover over|BookIT Home Page test scripts",
+        "description": "should verify dark-side map is displayed|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
+<<<<<<< HEAD
         "os": "Windows NT",
         "instanceId": 10024,
+=======
+        "os": "Mac OS X",
+        "instanceId": 23183,
+>>>>>>> b0ea225df1d6c84feeff0f549f79ca726c9f162a
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
@@ -393,6 +411,7 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
+<<<<<<< HEAD
         "screenShotFile": "images\\002f0031-00ae-0018-0088-009400170033.png",
         "timestamp": 1544947538879,
         "duration": 110
@@ -413,11 +432,17 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "screenShotFile": "images\\00910020-00c5-0021-00f4-00d30030005e.png",
         "timestamp": 1544947539861,
         "duration": 91
+=======
+        "screenShotFile": "images/001a0075-009c-007d-0016-00b3006a00e7.png",
+        "timestamp": 1545004576060,
+        "duration": 4644
+>>>>>>> b0ea225df1d6c84feeff0f549f79ca726c9f162a
     },
     {
-        "description": "should Verify \"Git Hub\" icon is visible|BookIT Home Page test scripts",
+        "description": "should verify \"VA\" and \"dark-side\" texts are displayed|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
+<<<<<<< HEAD
         "os": "Windows NT",
         "instanceId": 10024,
         "browser": {
@@ -537,6 +562,10 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "pending": false,
         "os": "Windows NT",
         "instanceId": 10024,
+=======
+        "os": "Mac OS X",
+        "instanceId": 23183,
+>>>>>>> b0ea225df1d6c84feeff0f549f79ca726c9f162a
         "browser": {
             "name": "chrome",
             "version": "71.0.3578.98"
@@ -544,6 +573,7 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
+<<<<<<< HEAD
         "screenShotFile": "images\\00ec00bc-00f6-0060-00ed-007500e300c5.png",
         "timestamp": 1544947554086,
         "duration": 69
@@ -859,6 +889,11 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "screenShotFile": "images\\00e20083-00ec-00d9-0003-00ef002800c0.png",
         "timestamp": 1544947555142,
         "duration": 29173
+=======
+        "screenShotFile": "images/003a0014-00ad-00b6-00ab-00f9009f001d.png",
+        "timestamp": 1545004581705,
+        "duration": 49
+>>>>>>> b0ea225df1d6c84feeff0f549f79ca726c9f162a
     }
 ];
 
