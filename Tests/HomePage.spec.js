@@ -193,5 +193,5 @@ describe('BookIT Home Page test scripts', () => {
                     
            });   
            
-           //vahdet branch
+           //vahdet2 branch
 
