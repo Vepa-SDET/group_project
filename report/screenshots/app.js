@@ -231,6 +231,13 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
 
     var results = [
     {
+<<<<<<< HEAD
+        "description": "should verify if \"meru\" link directs to the correct page|BookIT Home Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16492,
+=======
         "description": "should print out the Title|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
@@ -252,7 +259,12 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "passed": true,
         "pending": false,
         "os": "Mac OS X",
+<<<<<<< HEAD
         "instanceId": 3078,
+=======
+        "instanceId": 26077,
+>>>>>>> cf73d6fff25b96ff223d330f87132eff9ebe85b7
+>>>>>>> 1eaee9876b5aed1c76c3d1bd82170080ee38877b
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
@@ -260,16 +272,37 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
+<<<<<<< HEAD
         "screenShotFile": "images/00f8000e-00fe-009e-00d6-00ec008100eb.png",
         "timestamp": 1545014546024,
         "duration": 62
+=======
+<<<<<<< HEAD
+        "screenShotFile": "images\\007400f5-0092-0021-0052-004400c20093.png",
+        "timestamp": 1545013890416,
+        "duration": 3609
+=======
+        "screenShotFile": "images/00b20070-0010-009a-00ad-009f00a90030.png",
+        "timestamp": 1545010797132,
+        "duration": 55
+>>>>>>> cf73d6fff25b96ff223d330f87132eff9ebe85b7
+>>>>>>> 1eaee9876b5aed1c76c3d1bd82170080ee38877b
     },
     {
-        "description": "should verify email field|BookIT Home Page test scripts",
+        "description": "should verify if the \"cybertek bnb\" logo is displayed|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
+<<<<<<< HEAD
+        "os": "Windows NT",
+        "instanceId": 16492,
+=======
         "os": "Mac OS X",
+<<<<<<< HEAD
         "instanceId": 3078,
+=======
+        "instanceId": 26077,
+>>>>>>> cf73d6fff25b96ff223d330f87132eff9ebe85b7
+>>>>>>> 1eaee9876b5aed1c76c3d1bd82170080ee38877b
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
@@ -277,9 +310,20 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
+<<<<<<< HEAD
         "screenShotFile": "images/00e10050-0019-00b4-0032-00dd00cf0072.png",
         "timestamp": 1545014546510,
         "duration": 31
+=======
+<<<<<<< HEAD
+        "screenShotFile": "images\\00b5009b-006d-00e8-0078-004a00f600fe.png",
+        "timestamp": 1545013895199,
+        "duration": 41
+=======
+        "screenShotFile": "images/0035001e-007b-00de-0003-00c2000f0057.png",
+        "timestamp": 1545010798124,
+        "duration": 28
+>>>>>>> 1eaee9876b5aed1c76c3d1bd82170080ee38877b
     },
     {
         "description": "should verify password field|BookIT Home Page test scripts",
@@ -297,13 +341,23 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "screenShotFile": "images/00e5004e-00ee-00ac-00e3-005400dd0012.png",
         "timestamp": 1545014546967,
         "duration": 30
+>>>>>>> cf73d6fff25b96ff223d330f87132eff9ebe85b7
     },
     {
-        "description": "should verify email field has \"email\" place holder|BookIT Home Page test scripts",
+        "description": "should verify if the \"by Bug busters #7\" text is visible|BookIT Home Page test scripts",
         "passed": true,
         "pending": false,
+<<<<<<< HEAD
+        "os": "Windows NT",
+        "instanceId": 16492,
+=======
         "os": "Mac OS X",
+<<<<<<< HEAD
         "instanceId": 3078,
+=======
+        "instanceId": 26077,
+>>>>>>> cf73d6fff25b96ff223d330f87132eff9ebe85b7
+>>>>>>> 1eaee9876b5aed1c76c3d1bd82170080ee38877b
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
@@ -311,9 +365,27 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
+<<<<<<< HEAD
         "screenShotFile": "images/00630092-001f-00cf-00fe-00db001400e3.png",
         "timestamp": 1545014547423,
         "duration": 19
+=======
+<<<<<<< HEAD
+        "screenShotFile": "images\\008f00a9-00c5-0051-0021-003900b70066.png",
+        "timestamp": 1545013896699,
+        "duration": 128
+    },
+    {
+        "description": "should login with \"James May\" info|BookIT Home Page test scripts",
+        "passed": false,
+        "pending": true,
+        "os": "Windows NT",
+        "instanceId": 16492,
+=======
+        "screenShotFile": "images/00d600fe-00e4-00b6-00f0-00b1001e0022.png",
+        "timestamp": 1545010800064,
+        "duration": 32
+>>>>>>> 1eaee9876b5aed1c76c3d1bd82170080ee38877b
     },
     {
         "description": "should verify Login functionality with invalid credentials|BookIT Home Page test scripts",
@@ -374,11 +446,30 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "passed": true,
         "pending": false,
         "os": "Mac OS X",
+<<<<<<< HEAD
         "instanceId": 3078,
+=======
+        "instanceId": 26077,
+>>>>>>> cf73d6fff25b96ff223d330f87132eff9ebe85b7
+>>>>>>> 1eaee9876b5aed1c76c3d1bd82170080ee38877b
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
+<<<<<<< HEAD
+        "message": "Pending",
+        "browserLogs": [],
+        "screenShotFile": "images\\00b10020-006a-0003-00a9-00cd00620088.png",
+        "timestamp": 1545013897893,
+        "duration": 0
+    },
+    {
+        "description": "should verify dark-side map is displayed|BookIT Home Page test scripts",
+        "passed": false,
+        "pending": true,
+        "os": "Windows NT",
+        "instanceId": 16492,
+=======
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
@@ -408,17 +499,39 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "passed": true,
         "pending": false,
         "os": "Mac OS X",
+<<<<<<< HEAD
         "instanceId": 3078,
+=======
+        "instanceId": 26077,
+>>>>>>> cf73d6fff25b96ff223d330f87132eff9ebe85b7
+>>>>>>> 1eaee9876b5aed1c76c3d1bd82170080ee38877b
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
-        "message": "Passed.",
-        "trace": "",
+        "message": "Pending",
         "browserLogs": [],
+<<<<<<< HEAD
         "screenShotFile": "images/00490054-002d-00ed-0080-00ca00700066.png",
         "timestamp": 1545014553592,
         "duration": 64
+=======
+<<<<<<< HEAD
+        "screenShotFile": "images\\0064004d-00e8-003f-00d5-009200ce0084.png",
+        "timestamp": 1545013897903,
+        "duration": 0
+    },
+    {
+        "description": "should verify \"VA\" and \"dark-side\" texts are displayed|BookIT Home Page test scripts",
+        "passed": false,
+        "pending": true,
+        "os": "Windows NT",
+        "instanceId": 16492,
+=======
+        "screenShotFile": "images/00ad00d2-00ef-0069-0002-00f600a300f7.png",
+        "timestamp": 1545010808701,
+        "duration": 70
+>>>>>>> 1eaee9876b5aed1c76c3d1bd82170080ee38877b
     },
     {
         "description": "should Verify \"Git Hub\" icon is visible|BookIT Home Page test scripts",
@@ -483,15 +596,30 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "passed": false,
         "pending": true,
         "os": "Mac OS X",
+<<<<<<< HEAD
         "instanceId": 3078,
+=======
+        "instanceId": 26077,
+>>>>>>> cf73d6fff25b96ff223d330f87132eff9ebe85b7
+>>>>>>> 1eaee9876b5aed1c76c3d1bd82170080ee38877b
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
-        "message": "Temporarily disabled with xit",
+        "message": "Pending",
         "browserLogs": [],
+<<<<<<< HEAD
         "screenShotFile": "images/001b00b7-00cb-008a-0086-0074000d008f.png",
         "timestamp": 1545014559628,
+=======
+<<<<<<< HEAD
+        "screenShotFile": "images\\00350019-0051-00b1-00b4-002700fd00ca.png",
+        "timestamp": 1545013897915,
+        "duration": 0
+=======
+        "screenShotFile": "images/00fa008f-0046-00a2-00f5-0062004a0022.png",
+        "timestamp": 1545010816799,
+>>>>>>> 1eaee9876b5aed1c76c3d1bd82170080ee38877b
         "duration": 0
     },
     {
@@ -925,9 +1053,16 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
+<<<<<<< HEAD
         "screenShotFile": "images/004600a8-005f-0076-00b1-006900dc0052.png",
         "timestamp": 1545014596055,
         "duration": 2057
+=======
+        "screenShotFile": "images/00da0003-0030-006b-0039-0049006700a1.png",
+        "timestamp": 1545010828094,
+        "duration": 2046
+>>>>>>> cf73d6fff25b96ff223d330f87132eff9ebe85b7
+>>>>>>> 1eaee9876b5aed1c76c3d1bd82170080ee38877b
     }
 ];
 

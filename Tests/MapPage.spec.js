@@ -3,7 +3,9 @@ let HomePage= require('../Pages/Home.page.js');
 let Base = require('../Utilities/Base.js');
 let Data = require('../TestData/data.json');
 
+
 let MapPage = require('../Pages/Map.page.js');
+let RoomsPage = require('../Pages/Rooms.page.js');
 let MapData = require('../TestData/MapPage.json');
 
 //DB Connection
@@ -17,6 +19,7 @@ describe('BookIT Map Page test scripts', () => {
     var array=[]
     beforeAll(() => {
         Base.navigateToHome();
+        Base.loginMethod();
     });
 
     it('should login with "James May" info', () => {
@@ -50,4 +53,23 @@ describe('BookIT Map Page test scripts', () => {
         expect(MapPage.mapPageLogo.getText()).toEqual(MapData.MapPageLogo);
         expect(MapPage.mapPageMapNameElement.getText()).toEqual(MapData.MapPageMapName);
     });
+
+    //Vepa 
+
+    it('should verify if "meru" link directs to the correct page', () => {
+        MapPage.mapPageMeruLink.click();
+        expect(RoomsPage.roomsPageScheduleTable.isDisplayed()).toBe(true);
+        browser.navigate().back();
+    });
+
+    it('should verify if the "cybertek bnb" logo is displayed', () => {
+        expect(MapPage.mapPageCyberTekBNBLogo.isDisplayed()).toBe(true);
+ 
+    });
+    
+    it('should verify if the "by Bug busters #7" text is visible', () => {
+        expect(MapPage.mapPagebyBugbusters7Logo.isDisplayed()).toBe(true);
+    });
+
+
 });
