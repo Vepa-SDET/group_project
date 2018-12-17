@@ -11,7 +11,7 @@ var pgp            = require('pg-promise')(/*options*/);
 var dbConnection   = require("../TestData/dbConnection.js");
 var queries        = require("../TestData/dbQueries.js");
 
-describe('BookIT Home Page test scripts', () => {
+describe('BookIT Map Page test scripts', () => {
     let browserWindows="";
     var db=pgp(dbConnection);
     var array=[]

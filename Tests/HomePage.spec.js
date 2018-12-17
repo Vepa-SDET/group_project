@@ -95,7 +95,7 @@ describe('BookIT Home Page test scripts', () => {
         expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
     });
 
-    xit('should verify "Question" icon swithced to Mailto window when clicked', () => {
+    it('should verify "Question" icon swithced to Mailto window when clicked', () => {
         let questionWindow="";
         browser.close().then(()=>{
             browser.switchTo().window( browserWindows[0]);
