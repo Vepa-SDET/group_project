@@ -2,7 +2,7 @@ require('../Utilities/CustomLocators.js');
 let HomePage= require('../Pages/Home.page.js');
 let Base = require('../Utilities/Base.js');
 let Data = require('../TestData/data.json');
-
+let MySelfPage=require('../Pages/mySelf.page.js');
 
 let MapPage = require('../Pages/Map.page.js');
 let RoomsPage = require('../Pages/Rooms.page.js');
@@ -19,35 +19,16 @@ describe('BookIT Map Page test scripts', () => {
     var array=[]
     beforeAll(() => {
         Base.navigateToHome();
-        Base.loginMethod();
+        // Base.loginMethod();
+        Base.loginWithDBquery();
     });
 
     it('should login with "James May" info', () => {
-        db.one(queries.jamesMayEmail).then(emailObject=>{
-            HomePage.homePageEmailLoginBar.sendKeys(emailObject.email);
-        }).catch(error=>{
-            console.log(error)
-        }).then(()=>{
-            db.one(queries.jamesMayPassword).then(passwordObject=>{
-                HomePage.homePagePasswordBar.sendKeys(passwordObject.password);
-
-                
-            }).catch(error=>{
-                console.log(error);
-            }).then(()=>{
-                HomePage.homePageSignInButton.click();
-                browser.sleep(2000);
-                expect(MapPage.mapPageLogo.getText()).toEqual(MapData.MapPageLogo);
-            })
-        })
-
+        expect(MapPage.mapPageLogo.getText()).toEqual(MapData.MapPageLogo);
+       
     });
 
-    it('should verify dark-side map is displayed', () => {
-        browser.sleep(2000);
-        expect(MapPage.mapPageMapImage.isDisplayed()).toBe(true);
-    });
-
+  
     it('should verify "VA" and "dark-side" texts are displayed', () => {
         browser.sleep(2000);
         expect(MapPage.mapPageLogo.getText()).toEqual(MapData.MapPageLogo);
@@ -62,6 +43,11 @@ describe('BookIT Map Page test scripts', () => {
         browser.navigate().back();
     });
 
+    it('should verify dark-side map is displayed', () => {
+        browser.sleep(2000);
+        expect(MapPage.mapPageMapImage.isDisplayed()).toBe(true);
+    });
+    
     it('should verify if the "cybertek bnb" logo is displayed', () => {
         expect(MapPage.mapPageCyberTekBNBLogo.isDisplayed()).toBe(true);
  
@@ -72,11 +58,26 @@ describe('BookIT Map Page test scripts', () => {
     });
 
     it("should verify the 'schedule' dropdown's 'general' option link direct to the correct page", () => {
-        
+        browser.actions().mouseMove(MapPage.mapPageScheduleDropDown).perform().then(()=>{
+        MapPage.mapPageScheduleGeneralOption.click();
+        expect(RoomsPage.roomsPageScheduleHeader.isDisplayed()).toBe(true);
+    });
+        browser.navigate().back();
     });
 
-// Checked 
-// Checked the "my" dropdown's "self" option link direct the correct page
-// Checked the "my" dropdown's "team" option link direct the correct page
+    it("should verify the 'my' dropdown's 'self' option link direct the correct page", () => {
+        browser.actions().mouseMove(MapPage.mapPageMyDropDown).perform();
+        MapPage.mapPageMySelfOption.click();
+        expect(MySelfPage.mySelfPageMeHeader.isDisplayed()).toBe(true);
+        browser.navigate().back();
+    });
+
+    it("should verify the 'my' dropdown's 'team' option link direct the correct page", () => {
+        browser.actions().mouseMove(MapPage.mapPageMyDropDown).perform();
+        MapPage.mapPageMyTeamOption.click();
+        expect(MySelfPage.mySelfPageTeamHeader.isDisplayed()).toBe(true);
+        browser.navigate().back();
+    });
+
 
 });

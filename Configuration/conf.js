@@ -24,7 +24,7 @@ exports.config = {
 
 onPrepare: function () {
     browser.manage().timeouts().implicitlyWait(10000);
-    //browser.driver.manage().window().maximize();
+    browser.driver.manage().window().maximize();
     jasmine.getEnv().addReporter(new SpecReporter({
         displayFailuresSummary: true,
         displayFailuredSpec: true,

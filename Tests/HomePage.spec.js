@@ -193,9 +193,4 @@ describe('BookIT Home Page test scripts', () => {
              
             
            });     
-<<<<<<< HEAD
 });
-=======
-
-//develop test
->>>>>>> 37bd54dd19280162a9a69bc8c26395956ceeeb2e
