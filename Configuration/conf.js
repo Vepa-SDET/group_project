@@ -13,7 +13,7 @@ exports.config = {
     ]
 },
   
-  specs: ['../Tests/HomePage.spec.js'], 
+  specs: ['../Tests/MapPage.spec.js'], 
 
   // suites:{
   //   smoke: ['../Tests/BankManagerSimple.spec.js', '../Tests/demo.spec.js'],
