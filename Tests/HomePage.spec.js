@@ -47,6 +47,19 @@ describe('BookIT Home Page test scripts', () => {
         expect(HomePage.homePageLogo.getText()).toEqual(Data.HomePageLogo.Text);
 
     });
+    
+    it('Sign In - should be clickable', ()=>{ 
+        //HS-Verify "sign in" button is enabled when email & password fields full
+        HomePage.HomePageuserName.sendKeys("efewtrell8c@craigslist.org");
+        HomePage.HomePagepassword.sendKeys("jamesmay");
+        HomePage.HomePagecontentText.isDisplayed();
+        //HS-Verify "by Bug busters #7" text is visible
+        expect(HomePage.HomePagecontentText.getText()).toEqual("by Bug busters #7")
+        HomePage.HomePagesignInButton.isEnabled().then(function(result){
+        console.log(result);
+        });
+     });
+        
 
     it('should Verify Question Circle "?" icon is enabled', () => {
         expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
