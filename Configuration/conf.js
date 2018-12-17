@@ -13,9 +13,9 @@ exports.config = {
     ]
 },
   
- specs: ['../Tests/MapPage.spec.js'], 
+// specs: ['../Tests/MapPage.spec.js'], 
 
-//specs: ['../Tests/HomePage.spec.js', '../Tests/MapPage.spec.js'],
+specs: ['../Tests/HomePage.spec.js', '../Tests/MapPage.spec.js'],
 
   // suites:{
   //   smoke: ['../Tests/HomePage.spec.js', '../Tests/MapPage.spec.js'],   //protractor conf.js --suites smoke
