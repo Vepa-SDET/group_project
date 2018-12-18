@@ -14,7 +14,7 @@ var MapPage = function(){
     this.mapPageMyTeamOption=element(by.xpath("//a[text()='team']"));
 
     this.mapPagebyBugbusters7Logo=$(".content.has-text-centered"); 
-    this.mapLoby=$("#lobby-va-dark-side");
+    this.mapLoby=element(by.xpath(("//*[text()='lobby']")));
     this.mapStudyArea=$("#study_area-121");
     this.map4stayArea=$("#four_stay-121");
     this.mapTopMenu=$(".navbar-menu.is-transparent");

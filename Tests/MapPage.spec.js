@@ -80,28 +80,52 @@ describe('BookIT Map Page test scripts', () => {
         browser.navigate().back();
     });
 
+    //Feride
+    it("should verify that CANNOT click the lobby",()=>{
+        var currentUrl=browser.getCurrentUrl().then(function(url){
+console.log(url)
+        })
+        MapPage.mapLoby.click()
+        var lastUrl=browser.getCurrentUrl().then(function(url){
 
-    
-    it("should verify that CANNOT click the study area",()=>{
-        expect(MapPage.mapStudyArea.isEnabled()).toBe(true);
-
-    });
-    it("should verify that CANNOT click the 4stay area",()=>{
-        expect(MapPage.map4stayArea.isEnabled()).toBe(true);
+        })
+        expect(currentUrl).toEqual(lastUrl);
 
     })
-    it("should displayed the tap menu  ",()=>{
-        expect(MapPage.mapTopMenu.isDisplayed()).toBe(true);
+    it("should verify that CANNOT click the study area",()=>{
 
-    });
+     var currentUrl=browser.getCurrentUrl().then(function(url){
+       console.log(url)
+                    })
+    MapPage.mapStudyArea.click()
+     var lastUrl=browser.getCurrentUrl().then(function(url){
+            
+                    })
+       expect(currentUrl).toEqual(lastUrl);
+   
+
+
+    })
+    it("should verify that CANNOT click the 4stay area",()=>{
+        var currentUrl=browser.getCurrentUrl().then(function(url){
+            console.log(url)
+                    })
+         MapPage.map4stayArea.click()
+          var lastUrl=browser.getCurrentUrl().then(function(url){
+            
+                    })
+
+        expect(currentUrl).toEqual(lastUrl);
+    
+    })
+   
+   
     it("should displayed map text on the tap menu ",()=>{
-       expect(MapPage.mapMapText.getText().isDisplayed()).toBe(true);
+       expect(MapPage.mapMapText.getText()).toEqual("map");
     
 
     })
     it("should displayed schedule text on the tap menu ",()=>{
-        //expect(MapPage.mapScheduleLink.getText().isDisplayed()).toBe(true);
-
         expect(MapPage.mapScheduleLink.getText()).toEqual("schedule");
  
      });
@@ -122,6 +146,8 @@ describe('BookIT Map Page test scripts', () => {
      it("should Verify that the meru room is enabled ",()=>{
         expect(MapPage.meru.isDisplayed()).toBe(true);
         expect(MapPage.meru.isEnabled()).toBe(true);
+        expect(MapPage.mapScheduleText.getText()).toEqual("schedule")
+     
  
      });
 
