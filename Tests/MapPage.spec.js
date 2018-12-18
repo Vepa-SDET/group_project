@@ -84,27 +84,46 @@ describe('BookIT Map Page test scripts', () => {
     
     it("should verify that CANNOT click the study area",()=>{
         expect(MapPage.mapStudyArea.isEnabled()).toBe(true);
-
-    });
-    it("should verify that CANNOT click the 4stay area",()=>{
-        expect(MapPage.map4stayArea.isEnabled()).toBe(true);
-
-    })
-    it("should displayed the tap menu  ",()=>{
-        expect(MapPage.mapTopMenu.isDisplayed()).toBe(true);
-
-    });
-    it("should displayed map text on the tap menu ",()=>{
-       expect(MapPage.mapMapText.getText().isDisplayed()).toBe(true);
     
 
-    })
-    it("should displayed schedule text on the tap menu ",()=>{
-        //expect(MapPage.mapScheduleLink.getText().isDisplayed()).toBe(true);
+    fit("should verify that CANNOT click the lobby",()=>{
+        var currentUrl=browser.getCurrentUrl().then(function(url){
+console.log(url)
+        })
+        MapPage.mapLoby.click()
+        var lastUrl=browser.getCurrentUrl().then(function(url){
 
-        expect(MapPage.mapScheduleLink.getText()).toEqual("schedule");
- 
-     });
+        })
+        expect(currentUrl).toEqual(lastUrl);
+
+    })
+    it("should verify that CANNOT click the 4stay area",()=>{
+        var currentUrl=browser.getCurrentUrl().then(function(url){
+            console.log(url)
+                    })
+                    MapPage.map4stayArea.click()
+                    var lastUrl=browser.getCurrentUrl().then(function(url){
+            
+                    })
+                    expect(currentUrl).toEqual(lastUrl);
+
+        })
+          it("should verify that CANNOT click the study area",()=>{
+           var currentUrl=browser.getCurrentUrl().then(function(url){
+            console.log(url)
+                    })
+                    MapPage.mapStudyArea.click()
+                    var lastUrl=browser.getCurrentUrl().then(function(url){
+            
+                    })
+                    expect(currentUrl).toEqual(lastUrl);
+
+    })
+
+
+
+
+
 //Resul
      it("should Verify that the Half Dome room is enabled ",()=>{
         expect(MapPage.halfDome.isDisplayed()).toBe(true);
@@ -145,10 +164,10 @@ describe('BookIT Map Page test scripts', () => {
         browser.actions().mouseMove(MapPage.mapScheduleLink).perform();
         expect(MapPage.huntLinkMy.isDisplayed()).toBe(true);
         expect(MapPage.huntLinkGeneral.isDisplayed()).toBe(true);
-        
+        //test 11.20
      });
 
 
 
-    
+    });  
 });
