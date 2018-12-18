@@ -148,7 +148,7 @@ describe('BookIT Map Page test scripts', () => {
         
      });
 
-
+     //11:24
 
     
 });

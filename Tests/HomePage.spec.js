@@ -13,16 +13,16 @@ describe('BookIT Home Page test scripts', () => {
     beforeAll(() => {
         Base.navigateToHome();
     });
-
-    it('should print out the Title', () => {
+    
+    it('001 should print out the Title', () => {
         expect(browser.getTitle()).toEqual("cybertek-bnb");
         browser.getTitle().then((t)=>{
             console.log(t);
         });
         
     });
-
-    it('should check Sign in text on the Home Page', () => {
+    
+    it('002-should check Sign in text on the Home Page', () => {
     expect(HomePage.homePageLogo.getText()).toEqual(Data.HomePageLogo.Text);        
     expect(HomePage.homePageLogo.getCssValue("color")).toEqual(Data.HomePageLogo.Color);
     
@@ -201,7 +201,7 @@ describe('BookIT Home Page test scripts', () => {
             
 
 
-           //vahdet 9:46
+           //vahdet 11:34
            });     
 
 
