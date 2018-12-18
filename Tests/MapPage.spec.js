@@ -81,27 +81,55 @@ describe('BookIT Map Page test scripts', () => {
     });
 
 
-    });
-    it("should verify that CANNOT click the study area",()=>{
-        expect(MapPage.mapStudyArea.isEnabled()).toBe(true);
+    ////  FERIDE 
 
-    });
-    it("should verify that CANNOT click the 4stay area",()=>{
-        expect(MapPage.map4stayArea.isEnabled()).toBe(true);
+    fit("should verify that CANNOT click the lobby",()=>{
+        var currentUrl=browser.getCurrentUrl().then(function(url){
+console.log(url)
+        })
+        MapPage.mapLoby.click()
+        var lastUrl=browser.getCurrentUrl().then(function(url){
+
+        })
+        expect(currentUrl).toEqual(lastUrl);
 
     })
+    it("should verify that CANNOT click the 4stay area",()=>{
+        var currentUrl=browser.getCurrentUrl().then(function(url){
+            console.log(url)
+                    })
+                    MapPage.map4stayArea.click()
+                    var lastUrl=browser.getCurrentUrl().then(function(url){
+            
+                    })
+                    expect(currentUrl).toEqual(lastUrl);
+
+        })
+          it("should verify that CANNOT click the study area",()=>{
+           var currentUrl=browser.getCurrentUrl().then(function(url){
+            console.log(url)
+                    })
+                    MapPage.mapStudyArea.click()
+                    var lastUrl=browser.getCurrentUrl().then(function(url){
+            
+                    })
+                    expect(currentUrl).toEqual(lastUrl);
+
+    })
+
+
+
+
     it("should displayed the tap menu  ",()=>{
         expect(MapPage.mapTopMenu.isDisplayed()).toBe(true);
 
     });
     it("should displayed map text on the tap menu ",()=>{
-       expect(MapPage.mapMapText.getText().isDisplayed()).toBe(true);
+       expect(MapPage.mapMapText.getText()).toEqual("map");
     
 
     })
     it("should displayed schedule text on the tap menu ",()=>{
-        //expect(MapPage.mapScheduleLink.getText().isDisplayed()).toBe(true);
-
         expect(MapPage.mapScheduleLink.getText()).toEqual("schedule");
  
      });

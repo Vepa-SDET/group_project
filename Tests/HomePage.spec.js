@@ -39,6 +39,50 @@ describe('BookIT Home Page test scripts', () => {
     it('should verify email field has "email" place holder', () => {
         expect(HomePage.homePageEmailLoginBar.getAttribute("placeholder")).toEqual("email");
     });
+    
+     //Feride Data base query
+   //BT 008
+   it('Should verify email field accepts only correct email format',()=>{
+    db.any(queries.wrongEmail)
+    .then(function(result){
+        array=result
+        console.log(array)
+    }).catch(function(error){
+        console.log(error)
+    }).then(function(){
+        // array.forEach(function(element){
+        //     HomePage.email.sendKeys(element.firstname+"@gmail.co");
+        //     browser.sleep(5000)
+        //     HomePage.email.sendKeys(protractor.Key.ENTER)
+        //     expect(element(by.css(".cdk-overlay-container")).toBe(true));
+        //     browser.sleep(3000)
+        //     HomePage.email.clear();
+        //})
+          for(var a=0;a<array.length-1;a++){
+            HomePage.homePageEmailLoginBar.sendKeys(array[a].firstname+"@gmail.co");
+            HomePage.homePageEmailLoginBar.sendKeys(protractor.Key.ENTER)
+            browser.sleep(3000)
+            HomePage.homePageEmailLoginBar.clear();
+          }
+            
+        })
+       
+    })
+
+    // BT 008
+    it('Should verify password field has "password" place holder',()=>{
+        HomePage.homePagePasswordBar.clear(); 
+        expect(HomePage.homePagePasswordBar.getAttribute("placeholder")).toEqual("password");
+           
+       })
+   //BT 009
+    it(' should be disabled "sign in" button when email & password fields empty',()=>{
+        HomePage.homePagePasswordBar.clear(); 
+        HomePage.homePageEmailLoginBar.clear();
+        expect(HomePage.homePageSignInButton.isDisplayed()).toBe(true);
+         
+        
+       }); 
 
     it('should verify Login functionality with invalid credentials', () => {
         HomePage.homePageEmailLoginBar.sendKeys(Data.invalidUser.email);
@@ -154,45 +198,6 @@ describe('BookIT Home Page test scripts', () => {
     it('should Verify "Git Hub" icon color changes if we hover over ', () =>{
     expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
     });
-   //Feride Data base query
-    it('Should verify email field accepts only correct email format',()=>{
-        db.any(queries.wrongEmail)
-        .then(function(result){
-            array=result
-            console.log(array)
-        }).catch(function(error){
-            console.log(error)
-        }).then(function(){
-            // array.forEach(function(element){
-            //     HomePage.email.sendKeys(element.firstname+"@gmail.co");
-            //     browser.sleep(5000)
-            //     HomePage.email.sendKeys(protractor.Key.ENTER)
-            //     expect(element(by.css(".cdk-overlay-container")).toBe(true));
-            //     browser.sleep(3000)
-            //     HomePage.email.clear();
-            //})
-              for(var a=0;a<array.length-1;a++){
-                HomePage.homePageEmailLoginBar.sendKeys(array[a].firstname+"@gmail.co");
-                HomePage.homePageEmailLoginBar.sendKeys(protractor.Key.ENTER)
-                browser.sleep(3000)
-                HomePage.homePageEmailLoginBar.clear();
-              }
-                
-            })
-           
-        })
-        it('Should verify password field has "password" place holder',()=>{
-            HomePage.homePagePasswordBar.clear(); 
-            expect(HomePage.homePagePasswordBar.getAttribute("placeholder")).toEqual("password");
-               
-           })
-       
-        it(' should be disabled "sign in" button when email & password fields empty',()=>{
-            HomePage.homePagePasswordBar.clear(); 
-            HomePage.homePageEmailLoginBar.clear();
-            expect(HomePage.homePageSignInButton.isDisplayed()).toBe(true);
-             
-            
-           });     
+      
 
         });  
