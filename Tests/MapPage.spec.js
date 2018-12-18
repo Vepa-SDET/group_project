@@ -145,7 +145,7 @@ describe('BookIT Map Page test scripts', () => {
         browser.actions().mouseMove(MapPage.mapScheduleLink).perform();
         expect(MapPage.huntLinkMy.isDisplayed()).toBe(true);
         expect(MapPage.huntLinkGeneral.isDisplayed()).toBe(true);
-        
+        //test 11.20
      });
 
 
