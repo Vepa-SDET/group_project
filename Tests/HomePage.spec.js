@@ -146,10 +146,11 @@ describe('BookIT Home Page test scripts', () => {
     });
 //<<<<<<< HEAD
     
-    // it('should Verify "Git Hub" icon is visible', () => {
-    //     expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
+   it('should Verify "Git Hub" icon is visible', () => {
+         expect(HomePage.homePageGitHubLink.isDisplayed()).toBe(true);
         
-    
+   });
+
     it('should Verify "Git Hub" icon color changes if we hover over ', () =>{
     expect(HomePage.homePageQuestionLink.isEnabled()).toBe(true);
     });
@@ -193,4 +194,5 @@ describe('BookIT Home Page test scripts', () => {
              
             
            });     
-});
+
+        });  
