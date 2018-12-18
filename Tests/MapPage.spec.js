@@ -120,19 +120,7 @@ console.log(url)
 
 
 
-    it("should displayed the tap menu  ",()=>{
-        expect(MapPage.mapTopMenu.isDisplayed()).toBe(true);
 
-    });
-    it("should displayed map text on the tap menu ",()=>{
-       expect(MapPage.mapMapText.getText()).toEqual("map");
-    
-
-    })
-    it("should displayed schedule text on the tap menu ",()=>{
-        expect(MapPage.mapScheduleLink.getText()).toEqual("schedule");
- 
-     });
 //Resul
      it("should Verify that the Half Dome room is enabled ",()=>{
         expect(MapPage.halfDome.isDisplayed()).toBe(true);
@@ -173,7 +161,7 @@ console.log(url)
         browser.actions().mouseMove(MapPage.mapScheduleLink).perform();
         expect(MapPage.huntLinkMy.isDisplayed()).toBe(true);
         expect(MapPage.huntLinkGeneral.isDisplayed()).toBe(true);
-        
+        //test 11.20
      });
 
 
