@@ -231,412 +231,352 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
 
     var results = [
     {
-<<<<<<< HEAD
         "description": "should login with \"James May\" info|BookIT Map Page test scripts",
-        "passed": true,
+        "passed": false,
         "pending": false,
-        "os": "Windows NT",
-        "instanceId": 11340,
-=======
-        "description": "should Checked the my dropdown is displayed correctly |BookIT Map Page test scripts",
-        "passed": true,
-        "pending": false,
-        "os": "Windows NT",
-        "instanceId": 18624,
->>>>>>> 406bd444ac87df8e6209f84c0c854148e9af12fd
+        "os": "Mac OS X",
+        "instanceId": 30376,
         "browser": {
             "name": "chrome",
-            "version": "70.0.3538.110"
+            "version": "71.0.3578.98"
         },
-        "message": "Passed.",
-        "trace": "",
+        "message": [
+            "Expected 'sign in' to equal 'VA'."
+        ],
+        "trace": [
+            "Error: Failed expectation\n    at UserContext.it (/Users/esrakartal/Desktop/GroupBookit/Tests/MapPage.spec.js:28:47)\n    at /usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)\n    at ControlFlow.promise (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)\n    at schedulerExecute (/usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)\n    at TaskQueue.execute_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2974:25)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7"
+        ],
         "browserLogs": [],
-<<<<<<< HEAD
-        "screenShotFile": "images\\00f40081-0016-0032-0076-00bc008f00bb.png",
-        "timestamp": 1545061419385,
-        "duration": 2291
+        "screenShotFile": "images/00840049-00e2-005b-00ef-00c3008a0040.png",
+        "timestamp": 1545104859310,
+        "duration": 777
     },
     {
         "description": "should verify \"VA\" and \"dark-side\" texts are displayed|BookIT Map Page test scripts",
         "passed": true,
         "pending": false,
-        "os": "Windows NT",
-        "instanceId": 11340,
-=======
-        "screenShotFile": "images\\005b0096-003c-001c-0013-0099000600b2.png",
-        "timestamp": 1545095450828,
-        "duration": 5014
-    },
-    {
-        "description": "should Checked the schedule dropdown is displayed correctly |BookIT Map Page test scripts",
-        "passed": true,
-        "pending": false,
-        "os": "Windows NT",
-        "instanceId": 18624,
->>>>>>> 406bd444ac87df8e6209f84c0c854148e9af12fd
+        "os": "Mac OS X",
+        "instanceId": 30376,
         "browser": {
             "name": "chrome",
-            "version": "70.0.3538.110"
+            "version": "71.0.3578.98"
         },
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-<<<<<<< HEAD
-        "screenShotFile": "images\\00780029-0046-00a0-0029-00ab00c60003.png",
-        "timestamp": 1545061422634,
-        "duration": 2068
+        "screenShotFile": "images/002800e6-00f6-0092-009d-00e30061000a.png",
+        "timestamp": 1545104862197,
+        "duration": 2057
     },
     {
         "description": "should verify if \"meru\" link directs to the correct page|BookIT Map Page test scripts",
         "passed": true,
         "pending": false,
-        "os": "Windows NT",
-        "instanceId": 11340,
-=======
-        "screenShotFile": "images\\00ae001d-00e9-0037-001b-007400a0003d.png",
-        "timestamp": 1545095456465,
-        "duration": 204
-    },
-    {
-        "description": "should login with \"James May\" info|BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
+        "os": "Mac OS X",
+        "instanceId": 30376,
         "browser": {
             "name": "chrome",
-            "version": "70.0.3538.110"
+            "version": "71.0.3578.98"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00db0015-000e-0068-004b-002e008900f7.png",
-        "timestamp": 1545095457220,
-        "duration": 0
-    },
-    {
-        "description": "should verify dark-side map is displayed|BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
->>>>>>> 406bd444ac87df8e6209f84c0c854148e9af12fd
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-<<<<<<< HEAD
-        "screenShotFile": "images\\0025003b-0007-0049-008f-004000bb007e.png",
-        "timestamp": 1545061425602,
-        "duration": 1218
+        "screenShotFile": "images/00e800c9-0070-0022-001d-007500d3008e.png",
+        "timestamp": 1545104865300,
+        "duration": 1091
     },
     {
         "description": "should verify dark-side map is displayed|BookIT Map Page test scripts",
         "passed": true,
         "pending": false,
-        "os": "Windows NT",
-        "instanceId": 11340,
-=======
-        "screenShotFile": "images\\00ef00ab-008d-00cd-00f8-00c2003c006f.png",
-        "timestamp": 1545095457232,
-        "duration": 0
-    },
-    {
-        "description": "should verify \"VA\" and \"dark-side\" texts are displayed|BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
+        "os": "Mac OS X",
+        "instanceId": 30376,
         "browser": {
             "name": "chrome",
-            "version": "70.0.3538.110"
+            "version": "71.0.3578.98"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00670068-0066-00ff-0033-00bf00bb00a3.png",
-        "timestamp": 1545095457242,
-        "duration": 0
-    },
-    {
-        "description": "should verify if \"meru\" link directs to the correct page|BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
->>>>>>> 406bd444ac87df8e6209f84c0c854148e9af12fd
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-<<<<<<< HEAD
-        "screenShotFile": "images\\0013007e-00ce-007b-00bc-00e900eb0039.png",
-        "timestamp": 1545061427806,
-        "duration": 2042
+        "screenShotFile": "images/00bd00c6-00c8-00f0-00ed-002a00a000b9.png",
+        "timestamp": 1545104867507,
+        "duration": 2026
     },
     {
         "description": "should verify if the \"cybertek bnb\" logo is displayed|BookIT Map Page test scripts",
         "passed": true,
         "pending": false,
-        "os": "Windows NT",
-        "instanceId": 11340,
-=======
-        "screenShotFile": "images\\00f300ba-001c-00d6-0015-008d0079005b.png",
-        "timestamp": 1545095457252,
-        "duration": 0
-    },
-    {
-        "description": "should verify if the \"cybertek bnb\" logo is displayed|BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
+        "os": "Mac OS X",
+        "instanceId": 30376,
         "browser": {
             "name": "chrome",
-            "version": "70.0.3538.110"
+            "version": "71.0.3578.98"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00910038-0090-0026-0050-00d6003600f3.png",
-        "timestamp": 1545095457265,
-        "duration": 0
-    },
-    {
-        "description": "should verify if the \"by Bug busters #7\" text is visible|BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
->>>>>>> 406bd444ac87df8e6209f84c0c854148e9af12fd
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-<<<<<<< HEAD
-        "screenShotFile": "images\\00fe003e-006f-0012-00e5-003400410023.png",
-        "timestamp": 1545061430773,
-        "duration": 34
+        "screenShotFile": "images/005d0060-0057-0003-00ff-0040009d00d1.png",
+        "timestamp": 1545104870605,
+        "duration": 23
     },
     {
         "description": "should verify if the \"by Bug busters #7\" text is visible|BookIT Map Page test scripts",
         "passed": true,
         "pending": false,
-        "os": "Windows NT",
-        "instanceId": 11340,
-=======
-        "screenShotFile": "images\\00a0002c-006d-00a7-00cc-0018004500a9.png",
-        "timestamp": 1545095457274,
-        "duration": 1
-    },
-    {
-        "description": "should verify that CANNOT click the lobby|BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
+        "os": "Mac OS X",
+        "instanceId": 30376,
         "browser": {
             "name": "chrome",
-            "version": "70.0.3538.110"
+            "version": "71.0.3578.98"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00000080-0036-008e-0072-002500190080.png",
-        "timestamp": 1545095457285,
-        "duration": 0
-    },
-    {
-        "description": "should verify that CANNOT click the study area|BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images\\004c0074-00f9-0097-002b-00d900b10056.png",
-        "timestamp": 1545095457295,
-        "duration": 0
-    },
-    {
-        "description": "should verify that CANNOT click the 4stay area|BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images\\00ed00d7-0019-002e-0096-003800c50011.png",
-        "timestamp": 1545095457305,
-        "duration": 0
-    },
-    {
-        "description": "should displayed the tap menu  |BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
->>>>>>> 406bd444ac87df8e6209f84c0c854148e9af12fd
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-<<<<<<< HEAD
-        "screenShotFile": "images\\00a1001b-00d6-0046-003d-00ec00c70088.png",
-        "timestamp": 1545061431725,
-        "duration": 58
+        "screenShotFile": "images/00010099-0035-007d-0088-008400660052.png",
+        "timestamp": 1545104871630,
+        "duration": 24
     },
     {
         "description": "should verify the 'schedule' dropdown's 'general' option link direct to the correct page|BookIT Map Page test scripts",
         "passed": true,
         "pending": false,
-        "os": "Windows NT",
-        "instanceId": 11340,
-=======
-        "screenShotFile": "images\\00e000aa-00bf-0067-00f0-000400ff0022.png",
-        "timestamp": 1545095457316,
-        "duration": 0
-    },
-    {
-        "description": "should displayed map text on the tap menu |BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
+        "os": "Mac OS X",
+        "instanceId": 30376,
         "browser": {
             "name": "chrome",
-            "version": "70.0.3538.110"
+            "version": "71.0.3578.98"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\00ef0071-001a-003f-00ca-0047003f0002.png",
-        "timestamp": 1545095457326,
-        "duration": 0
-    },
-    {
-        "description": "should displayed schedule text on the tap menu |BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
->>>>>>> 406bd444ac87df8e6209f84c0c854148e9af12fd
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-<<<<<<< HEAD
-        "screenShotFile": "images\\00fa0089-0015-007d-0096-000a0078007e.png",
-        "timestamp": 1545061432702,
-        "duration": 1599
+        "screenShotFile": "images/00f300ac-00f2-00de-001c-00b5009a00dc.png",
+        "timestamp": 1545104872655,
+        "duration": 158
     },
     {
         "description": "should verify the 'my' dropdown's 'self' option link direct the correct page|BookIT Map Page test scripts",
         "passed": true,
         "pending": false,
-        "os": "Windows NT",
-        "instanceId": 11340,
-=======
-        "screenShotFile": "images\\00b700fe-004d-00fb-0088-008f00d40098.png",
-        "timestamp": 1545095457336,
-        "duration": 0
-    },
-    {
-        "description": "should Verify that the Half Dome room is enabled |BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
->>>>>>> 406bd444ac87df8e6209f84c0c854148e9af12fd
+        "os": "Mac OS X",
+        "instanceId": 30376,
         "browser": {
             "name": "chrome",
-            "version": "70.0.3538.110"
+            "version": "71.0.3578.98"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-<<<<<<< HEAD
-        "screenShotFile": "images\\00b50041-006f-009d-0088-00e100f2009e.png",
-        "timestamp": 1545061435246,
-        "duration": 1888
+        "screenShotFile": "images/000300e0-002a-00fa-0017-002400de00af.png",
+        "timestamp": 1545104873847,
+        "duration": 195
     },
     {
         "description": "should verify the 'my' dropdown's 'team' option link direct the correct page|BookIT Map Page test scripts",
         "passed": true,
         "pending": false,
-        "os": "Windows NT",
-        "instanceId": 11340,
-=======
-        "screenShotFile": "images\\00d8003f-0031-0072-00a3-0078008100f7.png",
-        "timestamp": 1545095457346,
-        "duration": 0
+        "os": "Mac OS X",
+        "instanceId": 30376,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/007300a6-0032-001d-0064-005b00190077.png",
+        "timestamp": 1545104875086,
+        "duration": 148
+    },
+    {
+        "description": "should verify that CANNOT click the study area|BookIT Map Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30376,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00e6009a-0004-0080-00de-007400390030.png",
+        "timestamp": 1545104876231,
+        "duration": 24
+    },
+    {
+        "description": "should verify that CANNOT click the 4stay area|BookIT Map Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30376,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00f90047-00e5-0099-0083-001b008300ab.png",
+        "timestamp": 1545104877249,
+        "duration": 31
+    },
+    {
+        "description": "should displayed the tap menu  |BookIT Map Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30376,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/00a6008f-003a-008d-0073-006f0048007a.png",
+        "timestamp": 1545104878300,
+        "duration": 23
+    },
+    {
+        "description": "should displayed map text on the tap menu |BookIT Map Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30376,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/002e00d0-00ab-0063-00d6-0037006a00d3.png",
+        "timestamp": 1545104879398,
+        "duration": 50
+    },
+    {
+        "description": "should displayed schedule text on the tap menu |BookIT Map Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30376,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/0056007c-00c8-0081-008b-0032001d00bf.png",
+        "timestamp": 1545104880545,
+        "duration": 35
+    },
+    {
+        "description": "should Verify that the Half Dome room is enabled |BookIT Map Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30376,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/002f00e1-0067-0047-0086-002700d000d7.png",
+        "timestamp": 1545104881965,
+        "duration": 43
     },
     {
         "description": "should Verify that the denali room is enabled |BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30376,
         "browser": {
             "name": "chrome",
-            "version": "70.0.3538.110"
+            "version": "71.0.3578.98"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\005e007a-00a9-0058-00c2-00470082007d.png",
-        "timestamp": 1545095457357,
-        "duration": 0
+        "screenShotFile": "images/008900ff-0055-00bc-00b6-008300e70034.png",
+        "timestamp": 1545104883255,
+        "duration": 38
     },
     {
         "description": "should Verify that the meru room is enabled |BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30376,
         "browser": {
             "name": "chrome",
-            "version": "70.0.3538.110"
+            "version": "71.0.3578.98"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images\\005e00c8-00a0-00e8-0082-0052002100bf.png",
-        "timestamp": 1545095457367,
-        "duration": 0
+        "screenShotFile": "images/008400d0-00fd-00c3-0030-008400940012.png",
+        "timestamp": 1545104884461,
+        "duration": 28
     },
     {
         "description": "should Checked the hunt link direct to correct page |BookIT Map Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Windows NT",
-        "instanceId": 18624,
->>>>>>> 406bd444ac87df8e6209f84c0c854148e9af12fd
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30376,
         "browser": {
             "name": "chrome",
-            "version": "70.0.3538.110"
+            "version": "71.0.3578.98"
         },
-        "message": "Pending",
+        "message": "Passed.",
+        "trace": "",
         "browserLogs": [],
-<<<<<<< HEAD
-        "screenShotFile": "images\\00ac0050-0085-0054-0045-00b800ea000a.png",
-        "timestamp": 1545061438100,
-        "duration": 949
-=======
-        "screenShotFile": "images\\00070006-0015-0029-00e5-00a40072002d.png",
-        "timestamp": 1545095457377,
-        "duration": 0
->>>>>>> 406bd444ac87df8e6209f84c0c854148e9af12fd
+        "screenShotFile": "images/003e00d8-002b-00cf-0077-00b000a300a4.png",
+        "timestamp": 1545104885531,
+        "duration": 6165
+    },
+    {
+        "description": "should Checked the my dropdown is displayed correctly |BookIT Map Page test scripts",
+        "passed": false,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30376,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": [
+            "Failed: No element found using locator: By(link text, self)"
+        ],
+        "trace": [
+            "NoSuchElementError: No element found using locator: By(link text, self)\n    at elementArrayFinder.getWebElements.then (/usr/local/lib/node_modules/protractor/built/element.js:814:27)\n    at ManagedPromise.invokeCallback_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2927:27)\n    at /usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)Error\n    at ElementArrayFinder.applyAction_ (/usr/local/lib/node_modules/protractor/built/element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as isDisplayed] (/usr/local/lib/node_modules/protractor/built/element.js:91:29)\n    at ElementFinder.(anonymous function).args [as isDisplayed] (/usr/local/lib/node_modules/protractor/built/element.js:831:22)\n    at UserContext.it (/Users/esrakartal/Desktop/GroupBookit/Tests/MapPage.spec.js:138:35)\n    at /usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:1077:7)\n    at ControlFlow.promise (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2505:12)\n    at schedulerExecute (/usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:95:18)\n    at TaskQueue.execute_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:3067:27)\nFrom: Task: Run it(\"should Checked the my dropdown is displayed correctly \") in control flow\n    at UserContext.<anonymous> (/usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\n    at /usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4264:13\n    at /usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4172:9\n    at /usr/local/lib/node_modules/protractor/node_modules/jasminewd2/index.js:64:48\n    at ControlFlow.emit (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/events.js:62:21)\n    at ControlFlow.shutdown_ (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2674:10)\n    at shutdownTask_.MicroTask (/usr/local/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/promise.js:2599:53)\nFrom asynchronous test: \nError\n    at Suite.describe (/Users/esrakartal/Desktop/GroupBookit/Tests/MapPage.spec.js:135:6)\n    at addSpecsToSuite (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/usr/local/lib/node_modules/protractor/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/Users/esrakartal/Desktop/GroupBookit/Tests/MapPage.spec.js:17:1)\n    at Module._compile (internal/modules/cjs/loader.js:689:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)\n    at Module.load (internal/modules/cjs/loader.js:599:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:538:12)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "images/0093006c-00b6-0000-0050-00f60099006e.png",
+        "timestamp": 1545104892878,
+        "duration": 12561
+    },
+    {
+        "description": "should Checked the schedule dropdown is displayed correctly |BookIT Map Page test scripts",
+        "passed": true,
+        "pending": false,
+        "os": "Mac OS X",
+        "instanceId": 30376,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images/000a00e2-00eb-006c-007d-000400b0003c.png",
+        "timestamp": 1545104910677,
+        "duration": 5143
     }
 ];
 

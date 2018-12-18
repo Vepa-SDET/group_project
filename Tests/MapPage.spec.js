@@ -24,13 +24,14 @@ describe('BookIT Map Page test scripts', () => {
         Base.loginWithDBquery();
     });
 
-    it('should login with "James May" info', () => {
+    // Esra
+    it('001 -> should login with "James May" info', () => {
         expect(MapPage.mapPageLogo.getText()).toEqual(MapData.MapPageLogo);
        
     });
 
-  
-    it('should verify "VA" and "dark-side" texts are displayed', () => {
+    // Esra
+    it('002 & 003 -> should verify "VA" and "dark-side" texts are displayed', () => {
         browser.sleep(2000);
         expect(MapPage.mapPageLogo.getText()).toEqual(MapData.MapPageLogo);
         expect(MapPage.mapPageMapNameElement.getText()).toEqual(MapData.MapPageMapName);
@@ -81,7 +82,7 @@ describe('BookIT Map Page test scripts', () => {
     });
 
 
-    });
+
     it("should verify that CANNOT click the study area",()=>{
         expect(MapPage.mapStudyArea.isEnabled()).toBe(true);
 
