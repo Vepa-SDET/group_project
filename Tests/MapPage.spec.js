@@ -80,12 +80,8 @@ describe('BookIT Map Page test scripts', () => {
         browser.navigate().back();
     });
 
-
-    
-    it("should verify that CANNOT click the study area",()=>{
-        expect(MapPage.mapStudyArea.isEnabled()).toBe(true);
-    
-
+    //feride
+// BT 0027
     fit("should verify that CANNOT click the lobby",()=>{
         var currentUrl=browser.getCurrentUrl().then(function(url){
 console.log(url)
@@ -97,6 +93,19 @@ console.log(url)
         expect(currentUrl).toEqual(lastUrl);
 
     })
+// BT 0028
+    it("should verify that CANNOT click the study area",()=>{
+        var currentUrl=browser.getCurrentUrl().then(function(url){
+         console.log(url)
+                 })
+                 MapPage.mapStudyArea.click()
+                 var lastUrl=browser.getCurrentUrl().then(function(url){
+         
+                 })
+                 expect(currentUrl).toEqual(lastUrl);
+
+ })
+ // BT 0029
     it("should verify that CANNOT click the 4stay area",()=>{
         var currentUrl=browser.getCurrentUrl().then(function(url){
             console.log(url)
@@ -108,21 +117,7 @@ console.log(url)
                     expect(currentUrl).toEqual(lastUrl);
 
         })
-          it("should verify that CANNOT click the study area",()=>{
-           var currentUrl=browser.getCurrentUrl().then(function(url){
-            console.log(url)
-                    })
-                    MapPage.mapStudyArea.click()
-                    var lastUrl=browser.getCurrentUrl().then(function(url){
-            
-                    })
-                    expect(currentUrl).toEqual(lastUrl);
-
-    })
-
-
-
-
+   
 
 //Resul
      it("should Verify that the Half Dome room is enabled ",()=>{
@@ -169,5 +164,19 @@ console.log(url)
 
 
 
+     //feride
+     //BT 048
+     it('should be displayed tap menu',()=>{
+         expect(MapPage.mapTopMenu.isDisplayed()).toBe(true);
+     })
+     //BT 049
+     it("should be displayed 'map' text on the tap menu",()=>{
+        expect(MapPage.mapMapText.getText()).toEqual("map")
+    })
+    //BT 050
+    it('should be displayed "schedule" text on the tap menu',()=>{
+        expect(MapPage.mapScheduleLink.getText()).toEqual("schedule")
+    })
+
+
     });  
-});
