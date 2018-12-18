@@ -81,7 +81,7 @@ describe('BookIT Map Page test scripts', () => {
     });
 
 
-    });
+   
     it("should verify that CANNOT click the study area",()=>{
         expect(MapPage.mapStudyArea.isEnabled()).toBe(true);
 
