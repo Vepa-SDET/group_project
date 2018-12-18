@@ -13,17 +13,22 @@ exports.config = {
     ]
 },
   
+<<<<<<< HEAD
+  specs: ['../Tests/MapPage.spec.js'], 
+=======
+specs: ['../Tests/MapPage.spec.js'], 
+>>>>>>> 406bd444ac87df8e6209f84c0c854148e9af12fd
 
-// specs: ['../Tests/HomePage.spec.js'], 
+//specs: ['../Tests/HomePage.spec.js', '../Tests/MapPage.spec.js'],
 
-  suites:{
-    smoke: ['../Tests/HomePage.spec.js', '../Tests/MapPage.spec.js'],   //protractor conf.js --suites smoke
-    //regression: ['../Tests/*.spec.js']
-  },
+//   suites:{
+//     smoke: ['../Tests/HomePage.spec.js', '../Tests/MapPage.spec.js'],   //protractor conf.js --suites smoke
+//     regression: ['../Tests/*.spec.js']
+//   },
 
 onPrepare: function () {
     browser.manage().timeouts().implicitlyWait(10000);
-    //browser.driver.manage().window().maximize();
+    browser.driver.manage().window().maximize();
     jasmine.getEnv().addReporter(new SpecReporter({
         displayFailuresSummary: true,
         displayFailuredSpec: true,

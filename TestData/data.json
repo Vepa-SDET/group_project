@@ -9,8 +9,11 @@
   },
   "gitHubTitle":{
     "text":"team-bugbusters · GitHub"
+  },
+  "validUser":{
+    "email" :"efewtrell8c@craigslist.org",
+    "password": "jamesmay"
   }
-
 
 
 }
