@@ -7,8 +7,10 @@ var MapPage = function(){
     this.mapPagebyBugbusters7Logo=$(".content.has-text-centered");
     this.mapPageScheduleDropDown=element(by.xpath("//a[text()='schedule']"));
     this.mapPageScheduleGeneralOption=element(by.xpath("//a[text()='general']"));
+    this.mapPageScheduleMyOption=element(by.xpath("//a[text()='my']"));
     this.mapPageMyDropDown=$$("[class='navbar-link']").get(1);
     this.mapPageMySelfOption=element(by.xpath("//a[text()='self']"));
+    this.mapPageMySignOutOption=element(by.xpath("//a[text()='sign out']"));
     this.mapPageMyTeamOption=element(by.xpath("//a[text()='team']"));
     this.mapPagebyBugbusters7Logo=$(".content.has-text-centered"); 
     this.mapLoby=$("#lobby-va-dark-side");
@@ -33,3 +35,7 @@ var MapPage = function(){
 }
 
 module.exports = new MapPage();
+
+    
+    
+    

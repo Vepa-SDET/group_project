@@ -58,6 +58,21 @@ describe('BookIT Map Page test scripts', () => {
         expect(MapPage.mapPagebyBugbusters7Logo.isDisplayed()).toBe(true);
     });
 
+    it('should verify the "schedule" dropdown has "my" and "general" options', () => {
+        browser.actions().mouseMove(MapPage.mapPageScheduleDropDown).perform().then(()=>{
+            expect(MapPage.mapPageScheduleGeneralOption.isEnabled()).toBe(true);
+            expect(MapPage.mapPageScheduleMyOption.isEnabled()).toBe(true);
+        });
+    });
+
+    it('should verify if "my" dropdown has "self", "team" and "sign out" options', () => {
+        browser.actions().mouseMove(MapPage.mapPageMyDropDown).perform().then(()=>{
+            expect(MapPage.mapPageMyTeamOption.isEnabled()).toBe(true);
+            expect(MapPage.mapPageMySelfOption.isEnabled()).toBe(true);
+            expect(MapPage.mapPageMySignOutOption.isEnabled()).toBe(true);
+        });
+    });
+
     it("should verify the 'schedule' dropdown's 'general' option link direct to the correct page", () => {
         browser.actions().mouseMove(MapPage.mapPageScheduleDropDown).perform().then(()=>{
         MapPage.mapPageScheduleGeneralOption.click();
@@ -66,6 +81,32 @@ describe('BookIT Map Page test scripts', () => {
         browser.navigate().back();
     });
 
+    it("should verify the 'schedule' dropdown's 'my' option link direct to the correct page", () => {
+        browser.actions().mouseMove(MapPage.mapPageScheduleDropDown).perform().then(()=>{
+        MapPage.mapPageScheduleMyOption.click();
+        expect(RoomsPage.roomsPageScheduleHeader.isDisplayed()).toBe(true);
+    });
+        browser.navigate().back();
+    });
+    
+    it("should checked klimanjaro link direct to correct page",()=>{
+        MapPage.kilimanjaroLink.click();
+
+       expect(MapPage.kilimanjaroPageTitle.getText()).toEqual("kilimanjaro");
+       browser.navigate().back();
+    });
+
+    it("should checked the hald Dome link direct to correct page",()=>{
+       MapPage.halfDomeLink.click();
+       expect(MapPage.halfDomePageTitle.getText()).toEqual("half dome");
+       browser.navigate().back();
+    })
+    it("should checked the denali link direkt to correct page",()=>{
+       MapPage.denaliLink.click();
+       expect(MapPage.denaliPageTitle.getText()).toEqual("denali");
+       browser.navigate().back();
+    });
+    
     it("should verify the 'my' dropdown's 'self' option link direct the correct page", () => {
         browser.actions().mouseMove(MapPage.mapPageMyDropDown).perform();
         MapPage.mapPageMySelfOption.click();
@@ -82,6 +123,7 @@ describe('BookIT Map Page test scripts', () => {
 
 
     
+   
     it("should verify that CANNOT click the study area",()=>{
         expect(MapPage.mapStudyArea.isEnabled()).toBe(true);
 
@@ -147,8 +189,8 @@ describe('BookIT Map Page test scripts', () => {
         expect(MapPage.huntLinkGeneral.isDisplayed()).toBe(true);
         
      });
-
+    
 
 
     
-});
+    });
