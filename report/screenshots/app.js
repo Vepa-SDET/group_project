@@ -231,11 +231,11 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
 
     var results = [
     {
-        "description": "should displayed the tap menu  |BookIT Map Page test scripts",
+        "description": "should Checked the my dropdown is displayed correctly |BookIT Map Page test scripts",
         "passed": true,
         "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
@@ -243,16 +243,16 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images/00ec00e2-00cd-005b-00b6-009e0049009a.png",
-        "timestamp": 1545067443370,
-        "duration": 2069
+        "screenShotFile": "images\\005b0096-003c-001c-0013-0099000600b2.png",
+        "timestamp": 1545095450828,
+        "duration": 5014
     },
     {
-        "description": "should displayed map text on the tap menu |BookIT Map Page test scripts",
+        "description": "should Checked the schedule dropdown is displayed correctly |BookIT Map Page test scripts",
         "passed": true,
         "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
@@ -260,473 +260,264 @@ app.controller('ScreenshotReportController', function ($scope, $http) {
         "message": "Passed.",
         "trace": "",
         "browserLogs": [],
-        "screenShotFile": "images/002a0007-0088-0068-0083-008e002700d7.png",
-        "timestamp": 1545067446398,
-        "duration": 61
-    },
-    {
-        "description": "should displayed schedule text on the tap menu |BookIT Map Page test scripts",
-        "passed": true,
-        "pending": false,
-        "os": "Mac OS X",
-        "instanceId": 7999,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Passed.",
-        "trace": "",
-        "browserLogs": [],
-        "screenShotFile": "images/003e00fb-00bf-0001-00f6-003800cc005f.png",
-        "timestamp": 1545067447362,
-        "duration": 55
+        "screenShotFile": "images\\00ae001d-00e9-0037-001b-007400a0003d.png",
+        "timestamp": 1545095456465,
+        "duration": 204
     },
     {
         "description": "should login with \"James May\" info|BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/0098003e-0061-00d0-00bf-00150041003c.png",
-        "timestamp": 1545067448315,
+        "screenShotFile": "images\\00db0015-000e-0068-004b-002e008900f7.png",
+        "timestamp": 1545095457220,
         "duration": 0
     },
     {
         "description": "should verify dark-side map is displayed|BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/007100c5-00a8-00f7-0063-006600910052.png",
-        "timestamp": 1545067448319,
+        "screenShotFile": "images\\00ef00ab-008d-00cd-00f8-00c2003c006f.png",
+        "timestamp": 1545095457232,
         "duration": 0
     },
     {
         "description": "should verify \"VA\" and \"dark-side\" texts are displayed|BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/00a40011-0025-007b-0041-00590069002d.png",
-        "timestamp": 1545067448323,
+        "screenShotFile": "images\\00670068-0066-00ff-0033-00bf00bb00a3.png",
+        "timestamp": 1545095457242,
         "duration": 0
     },
     {
         "description": "should verify if \"meru\" link directs to the correct page|BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/004b0039-0070-0093-00ac-00e700c60072.png",
-        "timestamp": 1545067448326,
+        "screenShotFile": "images\\00f300ba-001c-00d6-0015-008d0079005b.png",
+        "timestamp": 1545095457252,
         "duration": 0
     },
     {
         "description": "should verify if the \"cybertek bnb\" logo is displayed|BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/009e00bb-0031-0037-0013-00ae0067000d.png",
-        "timestamp": 1545067448330,
+        "screenShotFile": "images\\00910038-0090-0026-0050-00d6003600f3.png",
+        "timestamp": 1545095457265,
         "duration": 0
     },
     {
         "description": "should verify if the \"by Bug busters #7\" text is visible|BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/0081006f-009d-00ee-0071-0004007f0009.png",
-        "timestamp": 1545067448334,
-        "duration": 0
+        "screenShotFile": "images\\00a0002c-006d-00a7-00cc-0018004500a9.png",
+        "timestamp": 1545095457274,
+        "duration": 1
     },
     {
         "description": "should verify that CANNOT click the lobby|BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/003e0059-00a8-00dd-006b-00b700f9003b.png",
-        "timestamp": 1545067448338,
+        "screenShotFile": "images\\00000080-0036-008e-0072-002500190080.png",
+        "timestamp": 1545095457285,
         "duration": 0
     },
     {
         "description": "should verify that CANNOT click the study area|BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/003d0047-0088-006f-0018-002b00080081.png",
-        "timestamp": 1545067448341,
+        "screenShotFile": "images\\004c0074-00f9-0097-002b-00d900b10056.png",
+        "timestamp": 1545095457295,
         "duration": 0
     },
     {
         "description": "should verify that CANNOT click the 4stay area|BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/009300ab-00b8-0096-00a3-001100d300e5.png",
-        "timestamp": 1545067448345,
+        "screenShotFile": "images\\00ed00d7-0019-002e-0096-003800c50011.png",
+        "timestamp": 1545095457305,
         "duration": 0
     },
     {
-        "description": "should print out the Title|BookIT Home Page test scripts",
+        "description": "should displayed the tap menu  |BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/00bf0068-00ca-0046-003f-00da00b60099.png",
-        "timestamp": 1545067448349,
+        "screenShotFile": "images\\00e000aa-00bf-0067-00f0-000400ff0022.png",
+        "timestamp": 1545095457316,
         "duration": 0
     },
     {
-        "description": "should check Sign in text on the Home Page|BookIT Home Page test scripts",
+        "description": "should displayed map text on the tap menu |BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/000f0088-00ae-00b8-00bc-005e00fa00ce.png",
-        "timestamp": 1545067448353,
+        "screenShotFile": "images\\00ef0071-001a-003f-00ca-0047003f0002.png",
+        "timestamp": 1545095457326,
         "duration": 0
     },
     {
-        "description": "should verify email field|BookIT Home Page test scripts",
+        "description": "should displayed schedule text on the tap menu |BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/00dd00cd-0064-007e-005f-0074002e009f.png",
-        "timestamp": 1545067448357,
+        "screenShotFile": "images\\00b700fe-004d-00fb-0088-008f00d40098.png",
+        "timestamp": 1545095457336,
         "duration": 0
     },
     {
-        "description": "should verify password field|BookIT Home Page test scripts",
+        "description": "should Verify that the Half Dome room is enabled |BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/002d00ec-00b7-004e-006e-007a00f000c6.png",
-        "timestamp": 1545067448361,
+        "screenShotFile": "images\\00d8003f-0031-0072-00a3-0078008100f7.png",
+        "timestamp": 1545095457346,
         "duration": 0
     },
     {
-        "description": "should verify email field has \"email\" place holder|BookIT Home Page test scripts",
+        "description": "should Verify that the denali room is enabled |BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/000e00f7-001c-00e9-0069-000e00300053.png",
-        "timestamp": 1545067448365,
+        "screenShotFile": "images\\005e007a-00a9-0058-00c2-00470082007d.png",
+        "timestamp": 1545095457357,
         "duration": 0
     },
     {
-        "description": "should verify Login functionality with invalid credentials|BookIT Home Page test scripts",
+        "description": "should Verify that the meru room is enabled |BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/008a006f-0046-0064-0057-0089003c0099.png",
-        "timestamp": 1545067448369,
+        "screenShotFile": "images\\005e00c8-00a0-00e8-0082-0052002100bf.png",
+        "timestamp": 1545095457367,
         "duration": 0
     },
     {
-        "description": "Sign In - should be clickable|BookIT Home Page test scripts",
+        "description": "should Checked the hunt link direct to correct page |BookIT Map Page test scripts",
         "passed": false,
         "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
+        "os": "Windows NT",
+        "instanceId": 18624,
         "browser": {
             "name": "chrome",
             "version": "70.0.3538.110"
         },
         "message": "Pending",
         "browserLogs": [],
-        "screenShotFile": "images/00d200f7-0011-00d1-00f2-000f00560020.png",
-        "timestamp": 1545067448376,
-        "duration": 0
-    },
-    {
-        "description": "should Verify Question Circle \"?\" icon is enabled|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images/00f9007d-00b0-00f2-00b2-008a00f300de.png",
-        "timestamp": 1545067448383,
-        "duration": 0
-    },
-    {
-        "description": "should Verify \"Git Hub\" icon color changes if we hover over|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images/00ce0076-008f-0063-005b-002400ed000d.png",
-        "timestamp": 1545067448393,
-        "duration": 0
-    },
-    {
-        "description": "should Verify \"?\" icon color changes if we hover over|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images/00840002-00e9-008c-00aa-000f00d6002d.png",
-        "timestamp": 1545067448397,
-        "duration": 0
-    },
-    {
-        "description": "should Verify \"Git Hub\" icon is visible|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images/0013000b-001b-0054-009e-00fa00b0005a.png",
-        "timestamp": 1545067448402,
-        "duration": 0
-    },
-    {
-        "description": "should verify \"Git Hub\" icon is forwarding to Git Hub website when clicked|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images/0020009b-0029-0069-00de-00c10071007f.png",
-        "timestamp": 1545067448407,
-        "duration": 0
-    },
-    {
-        "description": "should Verify Question Circle \"?\" icon is enabled|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images/00ed001c-0011-00de-00bb-008800230018.png",
-        "timestamp": 1545067448411,
-        "duration": 0
-    },
-    {
-        "description": "should verify \"Question\" icon swithced to Mailto window when clicked|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Temporarily disabled with xit",
-        "browserLogs": [],
-        "screenShotFile": "images/00d6009c-004b-006f-0048-00e4006f00f2.png",
-        "timestamp": 1545067448416,
-        "duration": 0
-    },
-    {
-        "description": "should Verify \"Git Hub\" icon is visible|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images/00f100ce-003b-00a7-006f-00b9001600bd.png",
-        "timestamp": 1545067448419,
-        "duration": 1
-    },
-    {
-        "description": "should Verify \"Git Hub\" icon color changes if we hover over |BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images/00070059-00a0-0023-0024-003d002700ad.png",
-        "timestamp": 1545067448424,
-        "duration": 0
-    },
-    {
-        "description": "Should verify email field accepts only correct email format|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images/002000da-0087-00f1-001d-00590088006b.png",
-        "timestamp": 1545067448429,
-        "duration": 0
-    },
-    {
-        "description": "Should verify password field has \"password\" place holder|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images/00cd00cc-00a0-0095-0075-00da0045008a.png",
-        "timestamp": 1545067448434,
-        "duration": 0
-    },
-    {
-        "description": " should be disabled \"sign in\" button when email & password fields empty|BookIT Home Page test scripts",
-        "passed": false,
-        "pending": true,
-        "os": "Mac OS X",
-        "instanceId": 7999,
-        "browser": {
-            "name": "chrome",
-            "version": "70.0.3538.110"
-        },
-        "message": "Pending",
-        "browserLogs": [],
-        "screenShotFile": "images/00620094-0090-00cf-0066-00cc00760066.png",
-        "timestamp": 1545067448440,
+        "screenShotFile": "images\\00070006-0015-0029-00e5-00a40072002d.png",
+        "timestamp": 1545095457377,
         "duration": 0
     }
 ];

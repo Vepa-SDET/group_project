@@ -10,7 +10,20 @@ var MapPage = function(){
     this.map4stayArea=$("#four_stay-121");
     this.mapTopMenu=$(".navbar-menu.is-transparent");
     this.mapMapText=$(".navbar-end>a:nth-child(1)");
-    this.mapScheduleText=$(".navbar-end>div>a:nth-child(1)")
+    this.mapScheduleLink=element(by.linkText('schedule'));
+
+    this.halfDome=$("a#room-122");
+    this.drenali=$("a#room-123");
+    this.meru=$("a#room-123");
+
+    this.huntLink=element(by.linkText('hunt'));
+    this.huntLinkMy=element(by.linkText('my'));
+    this.huntLinkGeneral=element(by.linkText('general'));
+    this.myLink=element(by.linkText('my'));
+    this.myLinkSelf=element(by.linkText('self'));
+    this.myLinkTeam=element(by.linkText('team'));
+    this.myLinkSignout=element(by.linkText('sign out'));
+  
 }
 
 module.exports = new MapPage();
