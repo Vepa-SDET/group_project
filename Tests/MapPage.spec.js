@@ -1,8 +1,9 @@
 require('../Utilities/CustomLocators.js');
 let HomePage= require('../Pages/Home.page.js');
+let HuntPage= require('../Pages/Hunt.page.js');
 let Base = require('../Utilities/Base.js');
 let Data = require('../TestData/data.json');
-
+let MySelfPage=require('../Pages/mySelf.page.js');
 
 let MapPage = require('../Pages/Map.page.js');
 let RoomsPage = require('../Pages/Rooms.page.js');
@@ -19,35 +20,16 @@ describe('BookIT Map Page test scripts', () => {
     var array=[]
     beforeAll(() => {
         Base.navigateToHome();
-        Base.loginMethod();
+        // Base.loginMethod();
+        Base.loginWithDBquery();
     });
 
     it('should login with "James May" info', () => {
-        db.one(queries.jamesMayEmail).then(emailObject=>{
-            HomePage.homePageEmailLoginBar.sendKeys(emailObject.email);
-        }).catch(error=>{
-            console.log(error)
-        }).then(()=>{
-            db.one(queries.jamesMayPassword).then(passwordObject=>{
-                HomePage.homePagePasswordBar.sendKeys(passwordObject.password);
-
-                
-            }).catch(error=>{
-                console.log(error);
-            }).then(()=>{
-                HomePage.homePageSignInButton.click();
-                browser.sleep(2000);
-                expect(MapPage.mapPageLogo.getText()).toEqual(MapData.MapPageLogo);
-            })
-        })
-
+        expect(MapPage.mapPageLogo.getText()).toEqual(MapData.MapPageLogo);
+       
     });
 
-    it('should verify dark-side map is displayed', () => {
-        browser.sleep(2000);
-        expect(MapPage.mapPageMapImage.isDisplayed()).toBe(true);
-    });
-
+  
     it('should verify "VA" and "dark-side" texts are displayed', () => {
         browser.sleep(2000);
         expect(MapPage.mapPageLogo.getText()).toEqual(MapData.MapPageLogo);
@@ -62,6 +44,11 @@ describe('BookIT Map Page test scripts', () => {
         browser.navigate().back();
     });
 
+    it('should verify dark-side map is displayed', () => {
+        browser.sleep(2000);
+        expect(MapPage.mapPageMapImage.isDisplayed()).toBe(true);
+    });
+    
     it('should verify if the "cybertek bnb" logo is displayed', () => {
         expect(MapPage.mapPageCyberTekBNBLogo.isDisplayed()).toBe(true);
  
@@ -72,11 +59,96 @@ describe('BookIT Map Page test scripts', () => {
     });
 
     it("should verify the 'schedule' dropdown's 'general' option link direct to the correct page", () => {
-        
+        browser.actions().mouseMove(MapPage.mapPageScheduleDropDown).perform().then(()=>{
+        MapPage.mapPageScheduleGeneralOption.click();
+        expect(RoomsPage.roomsPageScheduleHeader.isDisplayed()).toBe(true);
+    });
+        browser.navigate().back();
     });
 
-// Checked 
-// Checked the "my" dropdown's "self" option link direct the correct page
-// Checked the "my" dropdown's "team" option link direct the correct page
+    it("should verify the 'my' dropdown's 'self' option link direct the correct page", () => {
+        browser.actions().mouseMove(MapPage.mapPageMyDropDown).perform();
+        MapPage.mapPageMySelfOption.click();
+        expect(MySelfPage.mySelfPageMeHeader.isDisplayed()).toBe(true);
+        browser.navigate().back();
+    });
 
+    it("should verify the 'my' dropdown's 'team' option link direct the correct page", () => {
+        browser.actions().mouseMove(MapPage.mapPageMyDropDown).perform();
+        MapPage.mapPageMyTeamOption.click();
+        expect(MySelfPage.mySelfPageTeamHeader.isDisplayed()).toBe(true);
+        browser.navigate().back();
+    });
+
+
+    
+    it("should verify that CANNOT click the study area",()=>{
+        expect(MapPage.mapStudyArea.isEnabled()).toBe(true);
+
+    });
+    it("should verify that CANNOT click the 4stay area",()=>{
+        expect(MapPage.map4stayArea.isEnabled()).toBe(true);
+
+    })
+    it("should displayed the tap menu  ",()=>{
+        expect(MapPage.mapTopMenu.isDisplayed()).toBe(true);
+
+    });
+    it("should displayed map text on the tap menu ",()=>{
+       expect(MapPage.mapMapText.getText().isDisplayed()).toBe(true);
+    
+
+    })
+    it("should displayed schedule text on the tap menu ",()=>{
+        //expect(MapPage.mapScheduleLink.getText().isDisplayed()).toBe(true);
+
+        expect(MapPage.mapScheduleLink.getText()).toEqual("schedule");
+ 
+     });
+//Resul
+     it("should Verify that the Half Dome room is enabled ",()=>{
+        expect(MapPage.halfDome.isDisplayed()).toBe(true);
+        expect(MapPage.halfDome.isEnabled()).toBe(true);
+ 
+     });
+
+
+     it("should Verify that the denali room is enabled ",()=>{
+        expect(MapPage.drenali.isDisplayed()).toBe(true);
+        expect(MapPage.drenali.isEnabled()).toBe(true);
+ 
+     });
+
+     it("should Verify that the meru room is enabled ",()=>{
+        expect(MapPage.meru.isDisplayed()).toBe(true);
+        expect(MapPage.meru.isEnabled()).toBe(true);
+ 
+     });
+
+     it("should Checked the hunt link direct to correct page ",()=>{
+         browser.navigate().refresh();
+        MapPage.huntLink.click();
+        expect(HuntPage.pickDateAndTimeText.getText()).toEqual("pick date and time");
+        browser.navigate().back();
+     });
+
+     it("should Checked the my dropdown is displayed correctly ",()=>{
+        browser.actions().mouseMove(MapPage.myLink).perform();
+        browser.sleep(2000);
+        expect(MapPage.myLinkSelf.isDisplayed()).toBe(true);
+        expect(MapPage.myLinkTeam.isDisplayed()).toBe(true);
+        expect(MapPage.myLinkSignout.isDisplayed()).toBe(true);
+        
+     });
+     
+     it("should Checked the schedule dropdown is displayed correctly ",()=>{
+        browser.actions().mouseMove(MapPage.mapScheduleLink).perform();
+        expect(MapPage.huntLinkMy.isDisplayed()).toBe(true);
+        expect(MapPage.huntLinkGeneral.isDisplayed()).toBe(true);
+        
+     });
+
+
+
+    
 });
