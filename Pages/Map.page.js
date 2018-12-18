@@ -4,14 +4,15 @@ var MapPage = function(){
     this.mapPageMapNameElement = $('.subtitle');
     this.mapPageMeruLink=$("[id='room-124']");
     this.mapPageCyberTekBNBLogo=$(".intro-img");
-<<<<<<< HEAD
+
     this.mapPagebyBugbusters7Logo=$(".content.has-text-centered");
     this.mapPageScheduleDropDown=element(by.xpath("//a[text()='schedule']"));
     this.mapPageScheduleGeneralOption=element(by.xpath("//a[text()='general']"));
     this.mapPageMyDropDown=$$("[class='navbar-link']").get(1);
     this.mapPageMySelfOption=element(by.xpath("//a[text()='self']"));
+    this.mapPageMyTeamOption= element(by.xpath("//a[text()='team']"));
     this.mapPageMyTeamOption=element(by.xpath("//a[text()='team']"));
-=======
+
     this.mapPagebyBugbusters7Logo=$(".content.has-text-centered"); 
     this.mapLoby=$("#lobby-va-dark-side");
     this.mapStudyArea=$("#study_area-121");
@@ -32,7 +33,7 @@ var MapPage = function(){
     this.myLinkTeam=element(by.linkText('team'));
     this.myLinkSignout=element(by.linkText('sign out'));
   
->>>>>>> 406bd444ac87df8e6209f84c0c854148e9af12fd
+
 }
 
 module.exports = new MapPage();
