@@ -17,6 +17,14 @@ var MapPage = function(){
     this.mapTopMenu=$(".navbar-menu.is-transparent");
     this.mapMapText=$(".navbar-end>a:nth-child(1)");
     this.mapScheduleLink=element(by.linkText('schedule'));
+    
+    //HS
+    this.mapOceanViewArea=element(by.cssContainingText('.room-name','ocean'));
+    this.mapKuzzatsCaveArea=element(by.cssContainingText('.room-name','cave'));
+    this.mapKlimanjaroArea=element(by.cssContainingText('.room-name','kilimanjaro'));
+    //this.mapHuntLink=element(by.linkText('hunt')); HAS DUPLICATE BELOW
+    this.mapMyLink=$$("[class='navbar-link']").get(1);
+    this.mapMapLink=element(by.linkText('map'));
 
     this.halfDome=$("a#room-122");
     this.drenali=$("a#room-123");

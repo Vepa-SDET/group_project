@@ -92,7 +92,7 @@ describe('BookIT Home Page test scripts', () => {
 
     });
     
-    it('Sign In - should be clickable', ()=>{ 
+    it('BT-010&BT-011- Sign In - should be clickable', ()=>{ 
         //HS-Verify "sign in" button is enabled when email & password fields full
         HomePage.HomePageuserName.sendKeys("efewtrell8c@craigslist.org");
         HomePage.HomePagepassword.sendKeys("jamesmay");

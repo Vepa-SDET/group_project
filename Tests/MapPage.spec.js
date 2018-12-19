@@ -81,7 +81,7 @@ describe('BookIT Map Page test scripts', () => {
     });
 
 
-    
+   //FO 
     it("should verify that CANNOT click the study area",()=>{
         expect(MapPage.mapStudyArea.isEnabled()).toBe(true);
     
@@ -119,7 +119,47 @@ console.log(url)
                     expect(currentUrl).toEqual(lastUrl);
 
     })
+//HS
+    it('BT-030 - Should verify that CANNOT click the "ocean view" room', ()=>{
+        var currentUrl=browser.getCurrentUrl().then(function(url){
+            console.log(url)
+                    });
+                    MapPage.mapOceanViewArea.click()
+                    var lastUrl=browser.getCurrentUrl().then(function(url){
+            
+                    });
+                    expect(currentUrl).toEqual(lastUrl);
+    });
+    it('BT-031 - Verify that CANNOT click the "kuzzats cave room', ()=>{
+        var currentUrl=browser.getCurrentUrl().then(function(url){
+        console.log(url)
+            });
+            MapPage.mapKuzzatsCaveArea.click()
+            var lastUrl=browser.getCurrentUrl().then(function(url){
+    
+            });
+            expect(currentUrl).toEqual(lastUrl);
+    });
+    it('BT-032 - Verify that room "klimanjaro" is clickable', ()=>{
+        expect(MapPage.mapKlimanjaroArea.isEnabled()).toBe(true);
+    });
 
+    //benden onceki diger test case ler olmadigi icin sirayi takip edemedim bu sekilde paste yaptim sonradan duzeltecegim 
+    //HS
+    it('BT-051 - Verify that "hunt" text is displayed on the tap menu', ()=>{
+        expect(MapPage.huntLink.isDisplayed()).toBe(true);
+    });
+    it('BT-052 - Verify "my" text is displayed on the tap menu', ()=>{
+        expect(MapPage.mapMyLink.isDisplayed()).toBe(true);
+    });
+
+    //this test case need to be after BT-054 so it can function correctly
+    it('BT-053 - Verify  "map" link direct to correct page', ()=>{
+        MapPage.mapMapLink.click();
+        expect(MapPage.mapMapLink.isDisplayed()).toBe(true);
+        browser.navigate().back();
+
+    });
 
 
 
