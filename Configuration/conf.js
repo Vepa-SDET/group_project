@@ -13,6 +13,8 @@ exports.config = {
     ]
 },
    
+  
+//specs: ['../Tests/MapPage.spec.js'], 
 specs: ['../Tests/MapPage.spec.js'], 
 
 //specs: ['../Tests/HomePage.spec.js', '../Tests/MapPage.spec.js'],
