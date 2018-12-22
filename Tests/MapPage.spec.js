@@ -119,10 +119,6 @@ describe('BookIT Map Page test scripts', () => {
     });
 
 
-   //Feride
-    it("028-> should verify that CANNOT click the study area",()=>{
-        expect(MapPage.mapStudyArea.isEnabled()).toBe(true);
-    });
 
     // Feride
     it("028-> should verify that CANNOT click the study area",()=>{
