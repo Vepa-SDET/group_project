@@ -221,7 +221,7 @@ describe('BookIT Map Page test scripts', () => {
 
 
 
-     //feride
+     //Feride
      //BT 048
      it('should be displayed tap menu',()=>{
          expect(MapPage.mapTopMenu.isDisplayed()).toBe(true);
