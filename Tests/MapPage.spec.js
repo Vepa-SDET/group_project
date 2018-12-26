@@ -113,26 +113,32 @@ describe('BookIT Map Page test scripts', () => {
      });
 
 
-     it("should Verify that the denali room is enabled ",()=>{
+     it("should Verify that the DENALI room is enabled ",()=>{
         expect(MapPage.drenali.isDisplayed()).toBe(true);
         expect(MapPage.drenali.isEnabled()).toBe(true);
  
      });
 
-     it("should Verify that the meru room is enabled ",()=>{
+     it("should Verify that the MERU room is enabled ",()=>{
         expect(MapPage.meru.isDisplayed()).toBe(true);
         expect(MapPage.meru.isEnabled()).toBe(true);
  
      });
 
-     it("should Checked the hunt link direct to correct page ",()=>{
+     it("should Checked the HUNT link direct to correct page ",()=>{
          browser.navigate().refresh();
         MapPage.huntLink.click();
         expect(HuntPage.pickDateAndTimeText.getText()).toEqual("pick date and time");
         browser.navigate().back();
      });
+     
+     it("should Checked the SCHEDULE dropdown is displayed correctly ",()=>{
+        browser.actions().mouseMove(MapPage.mapScheduleLink).perform();
+        expect(MapPage.scheduleLinkMy.isDisplayed()).toBe(true);
+        expect(MapPage.scheduleLinkGeneral.isDisplayed()).toBe(true);
+     });
 
-     it("should Checked the my dropdown is displayed correctly ",()=>{
+     it("should Checked the MY dropdown is displayed correctly ",()=>{
         browser.actions().mouseMove(MapPage.myLink).perform();
         browser.sleep(2000);
         expect(MapPage.myLinkSelf.isDisplayed()).toBe(true);
@@ -140,13 +146,18 @@ describe('BookIT Map Page test scripts', () => {
         expect(MapPage.myLinkSignout.isDisplayed()).toBe(true);
         
      });
-     
-     it("should Checked the schedule dropdown is displayed correctly ",()=>{
+
+     it("should checke the HUNT link direct to correct page ",()=>{
         browser.actions().mouseMove(MapPage.mapScheduleLink).perform();
         expect(MapPage.huntLinkMy.isDisplayed()).toBe(true);
         expect(MapPage.huntLinkGeneral.isDisplayed()).toBe(true);
-        //test 11.20
      });
+
+
+
+        
+    });
+     
 
 
 
