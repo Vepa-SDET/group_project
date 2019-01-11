@@ -4,7 +4,7 @@
   "description": "this is bookit automation testing project",
   "main": "index.js",
   "scripts": {
-    "test": "protractor conf.js"
+    "test": "protractor Configuration/conf.js"
   },
   "author": "",
   "license": "ISC",
