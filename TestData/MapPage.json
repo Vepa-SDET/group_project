@@ -1,4 +1,6 @@
 {
     "MapPageLogo": "VA",
-    "MapPageMapName": "dark-side"
+    "MapPageMapName": "dark-side",
+    "MapPageGithubIconColorBeforeHover": "rgba(50, 115, 220, 1)",
+    "MapPageGithubIconColorAfterHover": "rgba(54, 54, 54, 1)"
 }

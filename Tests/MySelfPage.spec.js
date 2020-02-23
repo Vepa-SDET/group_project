@@ -33,13 +33,13 @@ describe('BookIT my self link Page test scripts', () => {
         expect(MySelfPage.MySelfPageRole.get(1).getText()).toEqual("role");
     });
 
-    fit('should verify Team icon in "self" page is displayed', () => {
+    it('should verify Team icon in "self" page is displayed', () => {
         expect(MySelfPage.MySelfPageTeam.get(2).isDisplayed()).toBe(true);
         expect(MySelfPage.MySelfPageRole.get(2).getText()).toEqual("team");
 
     });
 
-    fit('should verify Batch icon in "self" page is displayed', () => {
+    it('should verify Batch icon in "self" page is displayed', () => {
         expect(MySelfPage.MySelfPageBatch.get(3).isDisplayed()).toBe(true);
         expect(MySelfPage.MySelfPageRole.get(3).getText()).toEqual("batch");
 

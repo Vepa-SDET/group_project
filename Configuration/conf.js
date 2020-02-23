@@ -12,9 +12,10 @@ exports.config = {
         '--start-fullscreen'
     ]
 },
+   
   
-  specs: ['../Tests/MySelfPage.spec.js'], 
- 
+//specs: ['../Tests/MapPage.spec.js'], 
+specs: ['../Tests/MySelfPage.spec.js'], 
 
 //specs: ['../Tests/HomePage.spec.js', '../Tests/MapPage.spec.js'],
 
@@ -25,7 +26,7 @@ exports.config = {
 
 onPrepare: function () {
     browser.manage().timeouts().implicitlyWait(10000);
-    browser.driver.manage().window().maximize();
+    //browser.driver.manage().window().maximize();
     jasmine.getEnv().addReporter(new SpecReporter({
         displayFailuresSummary: true,
         displayFailuredSpec: true,
